@@ -1,0 +1,48 @@
+body.role-content-manager{
+	margin-top:34px;
+}
+
+#block-superfish-3 {
+	position: fixed;
+	z-index:888;
+	top: 0;
+	left: 0;
+	background: #222;
+	width: 100%;
+}
+
+.block#block-superfish-3 ul,
+.block#block-superfish-3 ul.menu li{
+	list-style: none;
+	margin: 0;
+}
+
+
+#block-superfish-3 li {
+  margin: 0;
+}
+/* line 427, ../sass/global.scss */
+#block-superfish-3 li.menuparent a {
+  padding-right: 25px;
+}
+/* line 431, ../sass/global.scss */
+#block-superfish-3 a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid #555;
+}
+/* line 436, ../sass/global.scss */
+#block-superfish-3 a:hover {
+  background: #666;
+}
+/* line 440, ../sass/global.scss */
+#block-superfish-3 .sf-shadow ul {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: #222;
+  padding: 0;
+}

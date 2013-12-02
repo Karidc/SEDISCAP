@@ -1,0 +1,430 @@
+@import 'compass';
+
+$blue:#244060;
+$sky:#dbedf4;
+
+body {
+	font: 14px/1.5 Helvetica, Arial, sans-serif;
+	background:$blue;
+}
+h1,h2,h3,h4,h5{
+	font-family: Helvetica, Arial, sans-serif;
+}
+a,a:link{
+	color:$blue;
+}
+
+ul.primary {
+	margin: 0;
+	padding: 0.25em 0 0.5em 1em;
+	li a{
+		padding: 0.5em 1em;
+	}
+}
+
+#section-header{
+	background:white image-url('header-bck.png',false,false) repeat-x bottom;
+}
+#zone-menu-wrapper {
+	margin-top: 3px;
+}
+#region-branding {
+	margin: 15px 0 0;
+}
+#region-sidebar-first{
+	background:$sky image-url('sidebar-menu-2.png',false,false) repeat-y right;		
+	.region-inner{
+		background:image-url('sidebar-menu-1.png',false,false) repeat-x bottom;
+		padding-bottom:60px;
+	}
+}
+
+#block-delta-blocks-logo{
+	background:white;
+	text-align:center;
+	.logo-img{
+		float:none;
+		margin:0 auto;
+	}
+}
+#block-delta-blocks-site-name {
+	margin: 15px 20%;
+	text-align: center;
+}
+h1,h2{
+	&.site-name{
+		line-height: 28px;
+		font-weight:normal;
+		margin:0;
+		font-size:22px;
+		font-style:italic;
+	}
+}
+.block-main-menu ul li{
+	font-weight:bold;
+	margin:0;
+	&.sf-depth-1{
+		> a{
+			margin: 0;
+			padding: 10px 5px 0;
+			text-decoration: none;
+			height: 25px;
+			font-size:14px;
+			&.active{
+				background:#3c6ba0;
+				color:white;				
+			}
+		}
+		&:hover,
+		&.sfHover{
+			> a{
+				background:#eee;
+				color:black;			
+			}
+			> ul{
+				top: 35px;				
+			}
+		}
+	}
+	&.sf-depth-2 a{
+		padding:10px;
+		text-decoration:none;
+		background:#eee;
+		border-bottom: 1px solid #ccc;
+		&:hover{
+			background:#bbb;
+			color:white;			
+		}
+	}
+}
+
+#zone-content{
+	margin-top:20px;
+	margin-bottom:20px;
+	background:white;
+	min-height: 600px;
+}
+
+#block-menu-menu-ambitos {
+	padding: 5px 15px;
+}
+
+#boxes-box-indicators_box span{
+	margin-right: 10px;
+	a{
+		font-size: 16px;
+		&.active{
+			color:black;
+		}
+	}
+}
+
+#block-boxes-sidebar-menu-desc{
+	padding:10px;
+	background: darken($sky,10%) url('../images/sidebar-menu-2.png') repeat-y right;
+	.boxes-box-content{
+		margin-top: 5px;
+	}
+}
+
+.item-list li {
+	list-style: disc;
+}
+
+#block-menu-menu-first-sidebar{
+	.block-title{
+		font-size: 16px;
+		padding: 10px;
+	}
+	ul li.leaf {
+		list-style: none;
+		margin: 0;
+		padding:0;
+		a{
+			border-bottom:1px solid darken($sky,10%);
+			text-decoration:none;
+			display: block;
+			padding: 15px;
+			&:hover{
+				background:darken($sky,5%) image-url('sidebar-menu-2.png',false,false) repeat-y right;
+			}
+		}
+	}
+}
+
+
+/**
+ * Tables.
+ */
+table {
+	width: 100%;
+	font-size: 0.923em;
+	margin: 0 0 10px;
+	border: 1px solid #bebfb9;
+	td,th{
+		vertical-align: top;
+		padding: 8px 10px;
+		border: 0;
+		color: #000;
+	}
+}
+
+tr.even,
+tr.odd {
+  border-width: 0;
+  border-style: solid;
+  border-color: #bebfb9;
+  background: #f3f4ee;
+}
+tr.odd {
+  background: #fff;
+}
+tr.drag {
+  background: #fe7;
+}
+tr.drag-previous {
+  background: #ffb;
+}
+th {
+	text-transform: uppercase;
+	background: #e1e2dc;
+	font-weight: normal;
+	border-width: 0;
+	border-style: solid;
+	border-color: #bebfb9;
+	padding: 3px 10px;
+	&.active {
+		background: #bdbeb9;
+	}
+	a {
+		display: block;
+		position: relative;
+	}
+	&.active {
+		a {
+			padding: 0 25px 0 0; /* LTR */
+		}
+		img {
+			position: absolute;
+			top: 3px;
+			right: 3px; /* LTR */
+		}
+	}
+}
+table td.active {
+  background: #e9e9dd;
+}
+table tr.odd td.active {
+  background: #f3f4ee;
+}
+table tr.selected td.active,
+table tr.selected td {
+  background: #ffc;
+  border-color: #eeb;
+}
+table.system-status-report tr {
+  border-bottom: 1px solid #ccc;
+}
+table.system-status-report tr.ok {
+  color: #255b1e;
+  background-color: #e5ffe2;
+}
+table.system-status-report tr.info {
+  color: #040f37;
+  background-color: #bdf;
+}
+table.system-status-report tr.warning {
+  color: #840;
+  background-color: #fffce5;
+}
+table.system-status-report tr.error {
+  color: #8c2e0b;
+  background-color: #fef5f1;
+}
+/**
+ * Exception for webkit bug with the right border of the last cell
+ * in some tables, since it's webkit only, we can use :last-child
+ */
+tr td:last-child {
+  border-right: 1px solid #bebfb9; /* LTR */
+}
+
+
+
+
+.view-action-scope{
+	caption{
+		font-size: 20px;
+		text-align: left;
+		padding: 10px 0;
+		font-weight: bold;
+	}
+/*	tr td.views-field{
+		padding: 0;
+		&.views-field-field-report-type{
+			padding: 8px 10px;
+			width: 10%;
+		}
+		&.views-field-field-report-laws{
+			width: 30%;
+		}
+		&.views-field-field-report-programs{
+			width: 30%;
+		}
+		&.views-field-field-report-practices{
+			width: 30%;
+		}
+
+	}*/
+	table.views-table>tbody>tr>th{
+		width: 10%;
+	}
+	table.views-table>tbody>tr>td{
+		width: 30%;
+		padding:0;
+	}
+	table table{
+		padding:0;
+	}
+}
+
+
+#block-oea-form-oea-scope-filter{
+	background:#f2f2f2;
+	.block-inner{
+		padding:20px;
+	}
+	.form-item,
+	.form-submit{
+		float:left;
+		margin: 0 20px 0 0;
+	}
+	.form-submit{
+		margin-top: 15px;
+	}
+}
+
+.field-name-field-cstats-indicators,
+.field-name-field-pop-av-age,
+.field-name-field-pop-sex,
+.field-name-field-pop-age,
+.field-name-field-pop-ethnic,
+.field-name-field-pop-regions,
+.field-name-field-popd-dis-type,
+.field-name-field-popd-socioecon{
+	td,th{
+		width: 18%;
+		border-right: 1px solid #ccc;
+		text-align:center;
+		&:first-child{
+			width: 28%;
+			background-color:#e3e3e3;			
+		}
+	}	
+	td{
+		text-align:right;
+	}
+	tr.even{
+		td,th{
+			&:first-child{
+				background-color:#ddd;
+			}
+		}
+	}
+	/*.field_indicator_description{
+	}
+	tr.even .field_indicator_description{
+	}*/
+}
+
+.field-name-field-pop-pea,
+.field-name-field-pop-total,
+.field-name-field-pop-growth,
+.field-name-field-popd-prevalence,
+.field-name-field-popd-home-dis,
+.field-name-field-popd-home-dis-func{
+	&>.field-items>.field-item{
+		padding-left: 28%;
+		background: #ccc;
+	}
+	td,th{
+		width: 18%;
+		border-right: 1px solid #ccc;
+		text-align:center;
+	}
+	td{
+		text-align:right;
+	}
+}
+.field-collection-view-final {
+	border-bottom: 1px solid #bebfb9;
+}
+.field-collection-container {
+	border:0;
+	margin:0;
+}
+
+.block-boxes-indicators-box{
+	margin-bottom: 30px;
+	a{
+		background:lighten($blue,20%);
+		color: white;
+		text-decoration: none;
+		padding: 10px 15px;
+		&:hover{
+			background:lighten($blue,30%);
+		}
+		&.active{
+			background:#ddd;
+			color: black;
+		}
+	}
+}
+
+.node .field-name-body p{
+	text-align: justify;	
+}
+
+
+.webform-container-inline{
+	padding: 15px 0;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+	&>label {
+		width: 30%;
+		display: inline-block;
+	}
+}
+
+fieldset{
+	padding: 19px;
+	border: 1px solid #ddd;
+	margin: 15px 0;
+	legend{
+		padding: 0 5px;
+	}	
+}
+
+.view-countries{
+	.views-row{
+		padding: 15px;
+		background: #eee;
+		list-style: none;
+		margin: 0 0 20px;
+	}
+	.views-field-field-country-flag img{
+		vertical-align: text-top;
+	}
+	.views-field-php{
+		font-size: 18px;
+		font-weight: bold;		
+	}
+}
+
+table td.mini a {
+	background: #244060;
+	font-weight: normal;
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+}

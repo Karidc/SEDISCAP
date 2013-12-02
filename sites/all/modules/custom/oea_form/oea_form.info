@@ -1,0 +1,7 @@
+name = Forms
+description = Sandbox module
+package = SEDISCAP
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = manager-menu.css

@@ -1,92 +1,575 @@
-body{
-	background:#244060 url(../images/body-bck.gif) repeat-x;
+/* line 6, ../sass/global.scss */
+body {
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  background: #244060;
 }
-h1,h2,h3,h4,h5{
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+
+/* line 10, ../sass/global.scss */
+h1, h2, h3, h4, h5 {
+  font-family: Helvetica, Arial, sans-serif;
 }
-a,a:link{
-	color:#244060;
+
+/* line 13, ../sass/global.scss */
+a, a:link {
+  color: #244060;
 }
-#section-header{
-	height:150px;
+
+/* line 17, ../sass/global.scss */
+ul.primary {
+  margin: 0;
+  padding: 0.25em 0 0.5em 1em;
 }
+/* line 20, ../sass/global.scss */
+ul.primary li a {
+  padding: 0.5em 1em;
+}
+
+/* line 25, ../sass/global.scss */
+#section-header {
+  background: white url('../images/header-bck.png') repeat-x bottom;
+}
+
+/* line 28, ../sass/global.scss */
 #zone-menu-wrapper {
-	height: 35px;
-	margin-top: 3px;
+  margin-top: 3px;
 }
+
+/* line 31, ../sass/global.scss */
 #region-branding {
-	margin: 15px 0 0;
-}
-#region-sidebar-first{
-	background:#dbedf4;
-	-webkit-border-radius: 20px 0px 0px 20px;
-	border-radius: 20px 0px 0px 20px;
+  margin: 15px 0 0;
 }
 
-#block-delta-blocks-logo{
-	background:white;
-	text-align:center;
+/* line 34, ../sass/global.scss */
+#region-sidebar-first {
+  background: #dbedf4 url('../images/sidebar-menu-2.png') repeat-y right;
 }
-#block-delta-blocks-logo .logo-img{
-	float:none;
-	margin:0 auto;
+/* line 36, ../sass/global.scss */
+#region-sidebar-first .region-inner {
+  background: url('../images/sidebar-menu-1.png') repeat-x bottom;
+  padding-bottom: 60px;
 }
+
+/* line 42, ../sass/global.scss */
+#block-delta-blocks-logo {
+  background: white;
+  text-align: center;
+}
+/* line 45, ../sass/global.scss */
+#block-delta-blocks-logo .logo-img {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/global.scss */
 #block-delta-blocks-site-name {
-	margin: 18px 0;
-	float: left;
-	width: 305px;
-}
-h1.site-name,
-h2.site-name{
-	line-height: 28px;
-	font-weight:normal;
-	margin:0;
-	font-size:22px;
-	font-style:italic;
-}
-.block-main-menu ul li.sf-depth-1 > a{
-	margin: 0 4px 0 0;
-	padding: 10px 10px 0;
-	text-decoration: none;
-	height: 25px;
-	font-size:14px;
-	-webkit-border-radius: 10px 10px 0px 0px;
-	border-radius: 10px 10px 0px 0px;
-}
-.block-main-menu ul li.sf-depth-1:hover > a,
-.block-main-menu ul li.sf-depth-1.sfHover > a{
-	background:#eee;
-	color:black;
-}
-.block-main-menu ul li.sf-depth-1:hover > ul,
-.block-main-menu ul li.sf-depth-1.sfHover > ul {
-	top: 35px;
-}
-.block-main-menu ul li.sf-depth-1 > a.active{
-	background:#3c6ba0;
-	color:white;
-}
-.block-main-menu ul li.sf-depth-1 ul{
-	-webkit-box-shadow:  7px 7px 9px 0px rgba(0, 0, 0, 0.4);
-	box-shadow:  7px 7px 9px 0px rgba(0, 0, 0, 0.4);
-}
-.block-main-menu ul li.sf-depth-2 a{
-	padding:10px;
-	text-decoration:none;
-	background:#eee;
-}
-.block-main-menu ul li.sf-depth-2 a:hover/*,
-.block-main-menu ul li.sf-depth-2.sfHover > a*/{
-	background:#bbb;
-	color:white;
+  margin: 15px 20%;
+  text-align: center;
 }
 
-#zone-content{
-	margin-top:20px;
-	margin-bottom:20px;
-	background:white;
-	-webkit-box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.6);
-	box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.6);
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
+/* line 55, ../sass/global.scss */
+h1.site-name, h2.site-name {
+  line-height: 28px;
+  font-weight: normal;
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* line 63, ../sass/global.scss */
+.block-main-menu ul li {
+  font-weight: bold;
+  margin: 0;
+}
+/* line 67, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-1 > a {
+  margin: 0;
+  padding: 10px 5px 0;
+  text-decoration: none;
+  height: 25px;
+  font-size: 14px;
+}
+/* line 73, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-1 > a.active {
+  background: #3c6ba0;
+  color: white;
+}
+/* line 80, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-1:hover > a, .block-main-menu ul li.sf-depth-1.sfHover > a {
+  background: #eee;
+  color: black;
+}
+/* line 84, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-1:hover > ul, .block-main-menu ul li.sf-depth-1.sfHover > ul {
+  top: 35px;
+}
+/* line 89, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-2 a {
+  padding: 10px;
+  text-decoration: none;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}
+/* line 94, ../sass/global.scss */
+.block-main-menu ul li.sf-depth-2 a:hover {
+  background: #bbb;
+  color: white;
+}
+
+/* line 101, ../sass/global.scss */
+#zone-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  min-height: 600px;
+}
+
+/* line 108, ../sass/global.scss */
+#block-menu-menu-ambitos {
+  padding: 5px 15px;
+}
+
+/* line 112, ../sass/global.scss */
+#boxes-box-indicators_box span {
+  margin-right: 10px;
+}
+/* line 114, ../sass/global.scss */
+#boxes-box-indicators_box span a {
+  font-size: 16px;
+}
+/* line 116, ../sass/global.scss */
+#boxes-box-indicators_box span a.active {
+  color: black;
+}
+
+/* line 122, ../sass/global.scss */
+#block-boxes-sidebar-menu-desc {
+  padding: 10px;
+  background: #b4d9e8 url("../images/sidebar-menu-2.png") repeat-y right;
+}
+/* line 125, ../sass/global.scss */
+#block-boxes-sidebar-menu-desc .boxes-box-content {
+  margin-top: 5px;
+}
+
+/* line 130, ../sass/global.scss */
+.item-list li {
+  list-style: disc;
+}
+
+/* line 135, ../sass/global.scss */
+#block-menu-menu-first-sidebar .block-title {
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 139, ../sass/global.scss */
+#block-menu-menu-first-sidebar ul li.leaf {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 143, ../sass/global.scss */
+#block-menu-menu-first-sidebar ul li.leaf a {
+  border-bottom: 1px solid #b4d9e8;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+/* line 148, ../sass/global.scss */
+#block-menu-menu-first-sidebar ul li.leaf a:hover {
+  background: #c7e3ee url('../images/sidebar-menu-2.png') repeat-y right;
+}
+
+/**
+ * Tables.
+ */
+/* line 159, ../sass/global.scss */
+table {
+  width: 100%;
+  font-size: 0.923em;
+  margin: 0 0 10px;
+  border: 1px solid #bebfb9;
+}
+/* line 164, ../sass/global.scss */
+table td, table th {
+  vertical-align: top;
+  padding: 8px 10px;
+  border: 0;
+  color: #000;
+}
+
+/* line 173, ../sass/global.scss */
+tr.even,
+tr.odd {
+  border-width: 0;
+  border-style: solid;
+  border-color: #bebfb9;
+  background: #f3f4ee;
+}
+
+/* line 179, ../sass/global.scss */
+tr.odd {
+  background: #fff;
+}
+
+/* line 182, ../sass/global.scss */
+tr.drag {
+  background: #fe7;
+}
+
+/* line 185, ../sass/global.scss */
+tr.drag-previous {
+  background: #ffb;
+}
+
+/* line 188, ../sass/global.scss */
+th {
+  text-transform: uppercase;
+  background: #e1e2dc;
+  font-weight: normal;
+  border-width: 0;
+  border-style: solid;
+  border-color: #bebfb9;
+  padding: 3px 10px;
+}
+/* line 196, ../sass/global.scss */
+th.active {
+  background: #bdbeb9;
+}
+/* line 199, ../sass/global.scss */
+th a {
+  display: block;
+  position: relative;
+}
+/* line 204, ../sass/global.scss */
+th.active a {
+  padding: 0 25px 0 0;
+  /* LTR */
+}
+/* line 207, ../sass/global.scss */
+th.active img {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  /* LTR */
+}
+
+/* line 214, ../sass/global.scss */
+table td.active {
+  background: #e9e9dd;
+}
+
+/* line 217, ../sass/global.scss */
+table tr.odd td.active {
+  background: #f3f4ee;
+}
+
+/* line 221, ../sass/global.scss */
+table tr.selected td.active,
+table tr.selected td {
+  background: #ffc;
+  border-color: #eeb;
+}
+
+/* line 225, ../sass/global.scss */
+table.system-status-report tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 228, ../sass/global.scss */
+table.system-status-report tr.ok {
+  color: #255b1e;
+  background-color: #e5ffe2;
+}
+
+/* line 232, ../sass/global.scss */
+table.system-status-report tr.info {
+  color: #040f37;
+  background-color: #bdf;
+}
+
+/* line 236, ../sass/global.scss */
+table.system-status-report tr.warning {
+  color: #840;
+  background-color: #fffce5;
+}
+
+/* line 240, ../sass/global.scss */
+table.system-status-report tr.error {
+  color: #8c2e0b;
+  background-color: #fef5f1;
+}
+
+/**
+ * Exception for webkit bug with the right border of the last cell
+ * in some tables, since it's webkit only, we can use :last-child
+ */
+/* line 248, ../sass/global.scss */
+tr td:last-child {
+  border-right: 1px solid #bebfb9;
+  /* LTR */
+}
+
+/* line 255, ../sass/global.scss */
+.view-action-scope {
+  /*	tr td.views-field{
+  		padding: 0;
+  		&.views-field-field-report-type{
+  			padding: 8px 10px;
+  			width: 10%;
+  		}
+  		&.views-field-field-report-laws{
+  			width: 30%;
+  		}
+  		&.views-field-field-report-programs{
+  			width: 30%;
+  		}
+  		&.views-field-field-report-practices{
+  			width: 30%;
+  		}
+  
+  	}*/
+}
+/* line 256, ../sass/global.scss */
+.view-action-scope caption {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 0;
+  font-weight: bold;
+}
+/* line 279, ../sass/global.scss */
+.view-action-scope table.views-table > tbody > tr > th {
+  width: 10%;
+}
+/* line 282, ../sass/global.scss */
+.view-action-scope table.views-table > tbody > tr > td {
+  width: 30%;
+  padding: 0;
+}
+/* line 286, ../sass/global.scss */
+.view-action-scope table table {
+  padding: 0;
+}
+
+/* line 292, ../sass/global.scss */
+#block-oea-form-oea-scope-filter {
+  background: #f2f2f2;
+}
+/* line 294, ../sass/global.scss */
+#block-oea-form-oea-scope-filter .block-inner {
+  padding: 20px;
+}
+/* line 298, ../sass/global.scss */
+#block-oea-form-oea-scope-filter .form-item,
+#block-oea-form-oea-scope-filter .form-submit {
+  float: left;
+  margin: 0 20px 0 0;
+}
+/* line 302, ../sass/global.scss */
+#block-oea-form-oea-scope-filter .form-submit {
+  margin-top: 15px;
+}
+
+/* line 314, ../sass/global.scss */
+.field-name-field-cstats-indicators,
+.field-name-field-pop-av-age,
+.field-name-field-pop-sex,
+.field-name-field-pop-age,
+.field-name-field-pop-ethnic,
+.field-name-field-pop-regions,
+.field-name-field-popd-dis-type,
+.field-name-field-popd-socioecon {
+  /*.field_indicator_description{
+  }
+  tr.even .field_indicator_description{
+  }*/
+}
+/* line 315, ../sass/global.scss */
+.field-name-field-cstats-indicators td, .field-name-field-cstats-indicators th,
+.field-name-field-pop-av-age td,
+.field-name-field-pop-av-age th,
+.field-name-field-pop-sex td,
+.field-name-field-pop-sex th,
+.field-name-field-pop-age td,
+.field-name-field-pop-age th,
+.field-name-field-pop-ethnic td,
+.field-name-field-pop-ethnic th,
+.field-name-field-pop-regions td,
+.field-name-field-pop-regions th,
+.field-name-field-popd-dis-type td,
+.field-name-field-popd-dis-type th,
+.field-name-field-popd-socioecon td,
+.field-name-field-popd-socioecon th {
+  width: 18%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+/* line 319, ../sass/global.scss */
+.field-name-field-cstats-indicators td:first-child, .field-name-field-cstats-indicators th:first-child,
+.field-name-field-pop-av-age td:first-child,
+.field-name-field-pop-av-age th:first-child,
+.field-name-field-pop-sex td:first-child,
+.field-name-field-pop-sex th:first-child,
+.field-name-field-pop-age td:first-child,
+.field-name-field-pop-age th:first-child,
+.field-name-field-pop-ethnic td:first-child,
+.field-name-field-pop-ethnic th:first-child,
+.field-name-field-pop-regions td:first-child,
+.field-name-field-pop-regions th:first-child,
+.field-name-field-popd-dis-type td:first-child,
+.field-name-field-popd-dis-type th:first-child,
+.field-name-field-popd-socioecon td:first-child,
+.field-name-field-popd-socioecon th:first-child {
+  width: 28%;
+  background-color: #e3e3e3;
+}
+/* line 324, ../sass/global.scss */
+.field-name-field-cstats-indicators td,
+.field-name-field-pop-av-age td,
+.field-name-field-pop-sex td,
+.field-name-field-pop-age td,
+.field-name-field-pop-ethnic td,
+.field-name-field-pop-regions td,
+.field-name-field-popd-dis-type td,
+.field-name-field-popd-socioecon td {
+  text-align: right;
+}
+/* line 329, ../sass/global.scss */
+.field-name-field-cstats-indicators tr.even td:first-child, .field-name-field-cstats-indicators tr.even th:first-child,
+.field-name-field-pop-av-age tr.even td:first-child,
+.field-name-field-pop-av-age tr.even th:first-child,
+.field-name-field-pop-sex tr.even td:first-child,
+.field-name-field-pop-sex tr.even th:first-child,
+.field-name-field-pop-age tr.even td:first-child,
+.field-name-field-pop-age tr.even th:first-child,
+.field-name-field-pop-ethnic tr.even td:first-child,
+.field-name-field-pop-ethnic tr.even th:first-child,
+.field-name-field-pop-regions tr.even td:first-child,
+.field-name-field-pop-regions tr.even th:first-child,
+.field-name-field-popd-dis-type tr.even td:first-child,
+.field-name-field-popd-dis-type tr.even th:first-child,
+.field-name-field-popd-socioecon tr.even td:first-child,
+.field-name-field-popd-socioecon tr.even th:first-child {
+  background-color: #ddd;
+}
+
+/* line 346, ../sass/global.scss */
+.field-name-field-pop-pea > .field-items > .field-item,
+.field-name-field-pop-total > .field-items > .field-item,
+.field-name-field-pop-growth > .field-items > .field-item,
+.field-name-field-popd-prevalence > .field-items > .field-item,
+.field-name-field-popd-home-dis > .field-items > .field-item,
+.field-name-field-popd-home-dis-func > .field-items > .field-item {
+  padding-left: 28%;
+  background: #ccc;
+}
+/* line 350, ../sass/global.scss */
+.field-name-field-pop-pea td, .field-name-field-pop-pea th,
+.field-name-field-pop-total td,
+.field-name-field-pop-total th,
+.field-name-field-pop-growth td,
+.field-name-field-pop-growth th,
+.field-name-field-popd-prevalence td,
+.field-name-field-popd-prevalence th,
+.field-name-field-popd-home-dis td,
+.field-name-field-popd-home-dis th,
+.field-name-field-popd-home-dis-func td,
+.field-name-field-popd-home-dis-func th {
+  width: 18%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+/* line 355, ../sass/global.scss */
+.field-name-field-pop-pea td,
+.field-name-field-pop-total td,
+.field-name-field-pop-growth td,
+.field-name-field-popd-prevalence td,
+.field-name-field-popd-home-dis td,
+.field-name-field-popd-home-dis-func td {
+  text-align: right;
+}
+
+/* line 359, ../sass/global.scss */
+.field-collection-view-final {
+  border-bottom: 1px solid #bebfb9;
+}
+
+/* line 362, ../sass/global.scss */
+.field-collection-container {
+  border: 0;
+  margin: 0;
+}
+
+/* line 367, ../sass/global.scss */
+.block-boxes-indicators-box {
+  margin-bottom: 30px;
+}
+/* line 369, ../sass/global.scss */
+.block-boxes-indicators-box a {
+  background: #4071aa;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+/* line 374, ../sass/global.scss */
+.block-boxes-indicators-box a:hover {
+  background: #5b8bc2;
+}
+/* line 377, ../sass/global.scss */
+.block-boxes-indicators-box a.active {
+  background: #ddd;
+  color: black;
+}
+
+/* line 384, ../sass/global.scss */
+.node .field-name-body p {
+  text-align: justify;
+}
+
+/* line 389, ../sass/global.scss */
+.webform-container-inline {
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+/* line 393, ../sass/global.scss */
+.webform-container-inline > label {
+  width: 30%;
+  display: inline-block;
+}
+
+/* line 399, ../sass/global.scss */
+fieldset {
+  padding: 19px;
+  border: 1px solid #ddd;
+  margin: 15px 0;
+}
+/* line 403, ../sass/global.scss */
+fieldset legend {
+  padding: 0 5px;
+}
+
+/* line 409, ../sass/global.scss */
+.view-countries .views-row {
+  padding: 15px;
+  background: #eee;
+  list-style: none;
+  margin: 0 0 20px;
+}
+/* line 415, ../sass/global.scss */
+.view-countries .views-field-field-country-flag img {
+  vertical-align: text-top;
+}
+/* line 418, ../sass/global.scss */
+.view-countries .views-field-php {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 424, ../sass/global.scss */
+table td.mini a {
+  background: #244060;
+  font-weight: normal;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
 }

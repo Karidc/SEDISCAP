@@ -1,0 +1,139 @@
+<?php
+
+/*function oea_form_menu() {
+  $items['admin/config/regional/translate/i18n_string'] = array(
+    'title' => 'Strings',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'drupal_get_form',
+    'file' => 'i18n_string.admin.inc',
+    'access arguments' => array('translate interface'),
+  );
+  $items['admin/config/regional/i18n/strings'] = array(
+    'title' => 'Strings',
+    'description' => 'Options for user defined strings.',
+    'weight' => 20,
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('variable_edit_form', array('i18n_string_allowed_formats', 'i18n_string_source_language')),
+    'access arguments' => array('administer site configuration'),
+  );
+  // AJAX callback path for strings.
+  $items['i18n_string/save'] = array(
+    'title' => 'Save string',
+    'page callback' => 'i18n_string_l10n_client_save_string',
+    'access arguments' => array('use on-page translation'),
+    'file' => 'i18n_string.pages.inc',
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}*/
+
+
+function oea_scope_filter_form($form, &$form_state) {
+  $country_terms = taxonomy_get_tree(3);
+  $ordered_countries = array();
+  foreach ($country_terms as $value) {
+    $ordered_countries[$value->tid] = i18n_taxonomy_term_name($value);
+  }
+  asort($ordered_countries);
+
+  $selectable_fields = array();
+  $selectable_fields['all'] = t('All');
+  $selectable_fields['laws'] = t('Laws and regulations');
+  $selectable_fields['programs'] = t('Programs and plans');
+  $selectable_fields['good-practices'] = t('Good practices');
+
+  $form['countries'] = array(
+    '#type' => 'select',
+    '#multiple' => TRUE,
+    '#title' => t('Country'),
+    '#required' => FALSE,
+    '#size' => 5,
+    '#options' => $ordered_countries,
+  );
+  $form['field'] = array(
+    '#type' => 'select',
+    '#title' => t('Fields'),
+    '#multiple' => FALSE,
+    '#required' => FALSE,
+    '#options' => $selectable_fields,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Apply'),
+  );
+  return $form;
+}
+
+function oea_scope_filter_form_submit($form, &$form_state) {
+  $args = array(arg(0),arg(1),arg(2));
+
+  $countries = $form_state['values']['countries'];
+  $field = $form_state['values']['field'];
+  $final_path = '/' . $field;
+  
+  $params = array();
+  foreach ($countries as $country) {
+    $params['query']['country'][] = $country;      
+  }
+  if($field == 'all') $final_path = '';
+  drupal_goto(implode("/", $args) . $final_path , $params); 
+}
+
+function oea_form_block_info() {
+  $blocks['oea_scope_filter'] = array(
+    'info' => t('Scope filter'),
+  );
+  return $blocks;
+}
+
+function oea_form_block_view($delta = '') {
+  $block['subject'] = '';
+  $block['content'] = drupal_get_form('oea_scope_filter_form');
+  return $block;
+}
+
+function oea_form_system_info_alter(&$info, $file, $type) {
+  if ($type == 'theme') {
+    $info['overlay_supplemental_regions'][] = 'page_bottom';
+  }
+}
+
+
+/*function pan_manager_menu_permission() {
+  return array(
+    'create content by profile' => array(
+      'title' => t('create content by profile'),
+    ),
+  );
+}*/
+
+function oea_form_page_build(&$page){
+  global $user;
+  if(in_array('content manager', $user->roles)){
+    $block = block_load('superfish','3');
+    $renderable_block=  _block_get_renderable_array(_block_render_blocks(array($block)));
+    $page['page_bottom']['content_manager_menu_top'] = $renderable_block;
+  }
+}
+
+function oea_form_form_alter(&$form, &$form_state, $form_id){
+  global $user;
+  //dpm($user);
+  if(in_array('content manager', $user->roles)){
+    switch ($form_id) {
+      case 'country_statistics_node_form':
+      case 'population_node_form':
+      case 'pop_disability_node_form':
+      case 'legal_framework_node_form':
+      case 'report_node_form':
+      case 'accessibility_tools_node_form':
+      case 'events_node_form':
+      case 'official_links_node_form':
+        unset($form['options']);
+        unset($form['revision_information']);
+        unset($form['author']);
+      break;
+    }
+  }
+}
