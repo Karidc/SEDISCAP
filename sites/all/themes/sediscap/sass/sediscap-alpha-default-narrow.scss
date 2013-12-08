@@ -1,0 +1,47 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+
+@import 'compass';
+
+$blue:#244060;
+$sky:#dbedf4;
+
+.block-main-menu ul li{
+	width: 50%;
+}
+
+#block-superfish-2{
+	display:block;
+}
+
+.responsive-menus-0-0{
+	display: none;
+}
+
+#region-branding {
+	margin: 15px 0 0;
+}
+#region-menu{
+	margin-left: 10px;
+	margin-right: 10px;	
+}
+#region-sidebar-first{
+	background:$sky image-url('sidebar-menu-2.png',false,false) repeat-y right;
+	.region-inner{
+		background:image-url('sidebar-menu-1.png',false,false) repeat-x bottom;
+		padding-bottom:60px;
+	}
+}
+.responsive-layout-narrow #region-sidebar-first{
+	width: 135px;
+}
+
+#zone-content{
+	margin-top:20px;
+}
+
+#block-boxes-sidebar-menu-desc{
+	background: darken($sky,10%) url('../images/sidebar-menu-2.png') repeat-y right;
+}

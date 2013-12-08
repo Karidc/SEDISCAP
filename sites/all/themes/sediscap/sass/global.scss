@@ -39,20 +39,24 @@ ul.primary {
 	padding-top: 1em;
 }
 #section-header{
-	background:white image-url('header-bck.png',false,false) repeat-x bottom;
+	background:white;
 }
 #zone-menu-wrapper {
 	margin-top: 0.7em;
 	background: #ECECEC;
 }
 #region-branding {
-	margin: 15px 0 0;
+	margin: 0;
+}
+#region-menu{
+	margin:0;
 }
 #region-sidebar-first{
-	background:$sky image-url('sidebar-menu-2.png',false,false) repeat-y right;
+	background:$sky;
+	margin:0;
 	.region-inner{
-		background:image-url('sidebar-menu-1.png',false,false) repeat-x bottom;
-		padding-bottom:60px;
+		background:transparent;
+		padding-bottom:0;
 	}
 }
 
@@ -79,6 +83,25 @@ h1,h2{
 		text-transform: none;
 	}
 }
+#block-superfish-2{
+	display:none;
+}
+.responsive-menus.responsified span.toggler,
+.responsive-menus.responsified.responsive-toggled span.toggler {
+	border-radius: 0;
+	box-shadow: 0 0 0 transparent;
+	padding: 0.4em;
+	font-size: 1.5em;
+	color: black;
+	background: #ECECEC;	
+}
+.responsive-menus.responsified .responsive-menus-simple{
+	background:#244060;
+}
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+    border-radius: 0; box-shadow: 0 0 0 transparent;
+}
+
 .block-main-menu ul li{
 	font-weight:bold;
 	margin:0;
@@ -109,24 +132,25 @@ h1,h2{
 				color:black;
 			}
 			> ul{
-				top: 35px;
+				top: 46px;
 			}
 		}
 	}
 	&.sf-depth-2 a{
-		padding:10px;
+		text-align: left;
+		padding: 1.2em 1em;
 		text-decoration:none;
-		background:#eee;
+		background:#f8f8f8;
+		color:black;
 		border-bottom: 1px solid #ccc;
 		&:hover{
-			background:#bbb;
-			color:white;
+			background:#fff;
 		}
 	}
 }
 
 #zone-content{
-	margin-top:20px;
+	margin-top:0;
 	margin-bottom:20px;
 	background:white;
 	min-height: 600px;
@@ -145,7 +169,7 @@ h1,h2{
 
 #block-boxes-sidebar-menu-desc{
 	padding:10px;
-	background: darken($sky,10%) url('../images/sidebar-menu-2.png') repeat-y right;
+	background: darken($sky,10%);
 	.boxes-box-content{
 		margin-top: 5px;
 	}
@@ -456,5 +480,19 @@ table td.mini a {
 		margin-bottom: 1.5em;
 		padding: 0.5em;
 		background: #F8F8F8;
+	}
+}
+
+
+.node-official-links{
+	.field-collection-container .field-items .field-item{
+		margin: 0;
+		.field-collection-view{
+			padding: 1em;
+			margin: 0;
+			background: #F5F5F5;
+			border-bottom: 0;
+			margin-bottom: 1em;
+		}
 	}
 }

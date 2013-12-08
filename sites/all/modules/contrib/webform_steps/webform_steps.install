@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Add webform_custom_buttons module when upgrading from legacy.
+ */
+function webform_steps_update_1() {
+  module_enable(array('webform_custom_buttons'));
+}

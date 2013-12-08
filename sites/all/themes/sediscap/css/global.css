@@ -36,7 +36,7 @@ ul.primary li a {
 
 /* line 41, ../sass/global.scss */
 #section-header {
-  background: white url('../images/header-bck.png') repeat-x bottom;
+  background: white;
 }
 
 /* line 44, ../sass/global.scss */
@@ -47,37 +47,43 @@ ul.primary li a {
 
 /* line 48, ../sass/global.scss */
 #region-branding {
-  margin: 15px 0 0;
+  margin: 0;
 }
 
 /* line 51, ../sass/global.scss */
-#region-sidebar-first {
-  background: #dbedf4 url('../images/sidebar-menu-2.png') repeat-y right;
-}
-/* line 53, ../sass/global.scss */
-#region-sidebar-first .region-inner {
-  background: url('../images/sidebar-menu-1.png') repeat-x bottom;
-  padding-bottom: 60px;
+#region-menu {
+  margin: 0;
 }
 
-/* line 59, ../sass/global.scss */
+/* line 54, ../sass/global.scss */
+#region-sidebar-first {
+  background: #dbedf4;
+  margin: 0;
+}
+/* line 57, ../sass/global.scss */
+#region-sidebar-first .region-inner {
+  background: transparent;
+  padding-bottom: 0;
+}
+
+/* line 63, ../sass/global.scss */
 #block-delta-blocks-logo {
   background: white;
   text-align: center;
 }
-/* line 62, ../sass/global.scss */
+/* line 66, ../sass/global.scss */
 #block-delta-blocks-logo .logo-img {
   float: none;
   margin: 0 auto;
 }
 
-/* line 67, ../sass/global.scss */
+/* line 71, ../sass/global.scss */
 #block-delta-blocks-site-name {
   margin: 15px 20%;
   text-align: center;
 }
 
-/* line 72, ../sass/global.scss */
+/* line 76, ../sass/global.scss */
 h1.site-name, h2.site-name {
   font-family: 'Open Sans', serif;
   line-height: 28px;
@@ -88,106 +94,134 @@ h1.site-name, h2.site-name {
   text-transform: none;
 }
 
-/* line 82, ../sass/global.scss */
+/* line 86, ../sass/global.scss */
+#block-superfish-2 {
+  display: none;
+}
+
+/* line 90, ../sass/global.scss */
+.responsive-menus.responsified span.toggler,
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-radius: 0;
+  box-shadow: 0 0 0 transparent;
+  padding: 0.4em;
+  font-size: 1.5em;
+  color: black;
+  background: #ECECEC;
+}
+
+/* line 98, ../sass/global.scss */
+.responsive-menus.responsified .responsive-menus-simple {
+  background: #244060;
+}
+
+/* line 101, ../sass/global.scss */
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+  border-radius: 0;
+  box-shadow: 0 0 0 transparent;
+}
+
+/* line 105, ../sass/global.scss */
 .block-main-menu ul li {
   font-weight: bold;
   margin: 0;
   width: 100%;
   text-align: center;
 }
-/* line 88, ../sass/global.scss */
+/* line 111, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1 > a {
   margin: 0;
   padding: 0.9em 1em;
   text-decoration: none;
   border-bottom: 1px solid #cacaca;
 }
-/* line 94, ../sass/global.scss */
+/* line 117, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1 > a:hover {
   background: #F5F5F5;
 }
-/* line 97, ../sass/global.scss */
+/* line 120, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1 > a.active {
   background: #3c6ba0;
   color: white;
 }
-/* line 100, ../sass/global.scss */
+/* line 123, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1 > a.active:hover {
   background: #3c6ba0;
 }
-/* line 107, ../sass/global.scss */
+/* line 130, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1:hover > a, .block-main-menu ul li.sf-depth-1.sfHover > a {
   background: #eee;
   color: black;
 }
-/* line 111, ../sass/global.scss */
+/* line 134, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-1:hover > ul, .block-main-menu ul li.sf-depth-1.sfHover > ul {
-  top: 35px;
+  top: 46px;
 }
-/* line 116, ../sass/global.scss */
+/* line 139, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-2 a {
-  padding: 10px;
+  text-align: left;
+  padding: 1.2em 1em;
   text-decoration: none;
-  background: #eee;
+  background: #f8f8f8;
+  color: black;
   border-bottom: 1px solid #ccc;
 }
-/* line 121, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 .block-main-menu ul li.sf-depth-2 a:hover {
-  background: #bbb;
-  color: white;
+  background: #fff;
 }
 
-/* line 128, ../sass/global.scss */
+/* line 152, ../sass/global.scss */
 #zone-content {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 20px;
   background: white;
   min-height: 600px;
 }
 
-/* line 135, ../sass/global.scss */
+/* line 159, ../sass/global.scss */
 #block-menu-menu-ambitos {
   padding: 5px 15px;
 }
 
-/* line 139, ../sass/global.scss */
+/* line 163, ../sass/global.scss */
 #block-boxes-indicators-box span {
   margin-right: 2px;
 }
-/* line 141, ../sass/global.scss */
+/* line 165, ../sass/global.scss */
 #block-boxes-indicators-box span a {
   font-size: 1.15em;
 }
 
-/* line 146, ../sass/global.scss */
+/* line 170, ../sass/global.scss */
 #block-boxes-sidebar-menu-desc {
   padding: 10px;
-  background: #b4d9e8 url("../images/sidebar-menu-2.png") repeat-y right;
+  background: #b4d9e8;
 }
-/* line 149, ../sass/global.scss */
+/* line 173, ../sass/global.scss */
 #block-boxes-sidebar-menu-desc .boxes-box-content {
   margin-top: 5px;
 }
 
-/* line 154, ../sass/global.scss */
+/* line 178, ../sass/global.scss */
 .item-list li {
   list-style: disc;
 }
 
-/* line 159, ../sass/global.scss */
+/* line 183, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 163, ../sass/global.scss */
+/* line 187, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf a {
   border-bottom: 1px solid #b4d9e8;
   text-decoration: none;
   display: block;
   padding: 15px;
 }
-/* line 168, ../sass/global.scss */
+/* line 192, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf a:hover {
   background: #c7e3ee url('../images/sidebar-menu-2.png') repeat-y right;
 }
@@ -195,14 +229,14 @@ h1.site-name, h2.site-name {
 /**
  * Tables.
  */
-/* line 179, ../sass/global.scss */
+/* line 203, ../sass/global.scss */
 table {
   width: 100%;
   font-size: 0.923em;
   margin: 0 0 10px;
   border: 1px solid #bebfb9;
 }
-/* line 184, ../sass/global.scss */
+/* line 208, ../sass/global.scss */
 table td, table th {
   vertical-align: top;
   padding: 8px 10px;
@@ -210,7 +244,7 @@ table td, table th {
   color: #000;
 }
 
-/* line 193, ../sass/global.scss */
+/* line 217, ../sass/global.scss */
 tr.even,
 tr.odd {
   border-width: 0;
@@ -219,22 +253,22 @@ tr.odd {
   background: #f3f4ee;
 }
 
-/* line 199, ../sass/global.scss */
+/* line 223, ../sass/global.scss */
 tr.odd {
   background: #fff;
 }
 
-/* line 202, ../sass/global.scss */
+/* line 226, ../sass/global.scss */
 tr.drag {
   background: #fe7;
 }
 
-/* line 205, ../sass/global.scss */
+/* line 229, ../sass/global.scss */
 tr.drag-previous {
   background: #ffb;
 }
 
-/* line 208, ../sass/global.scss */
+/* line 232, ../sass/global.scss */
 th {
   text-transform: uppercase;
   background: #e1e2dc;
@@ -244,21 +278,21 @@ th {
   border-color: #bebfb9;
   padding: 3px 10px;
 }
-/* line 216, ../sass/global.scss */
+/* line 240, ../sass/global.scss */
 th.active {
   background: #bdbeb9;
 }
-/* line 219, ../sass/global.scss */
+/* line 243, ../sass/global.scss */
 th a {
   display: block;
   position: relative;
 }
-/* line 224, ../sass/global.scss */
+/* line 248, ../sass/global.scss */
 th.active a {
   padding: 0 25px 0 0;
   /* LTR */
 }
-/* line 227, ../sass/global.scss */
+/* line 251, ../sass/global.scss */
 th.active img {
   position: absolute;
   top: 3px;
@@ -266,47 +300,47 @@ th.active img {
   /* LTR */
 }
 
-/* line 234, ../sass/global.scss */
+/* line 258, ../sass/global.scss */
 table td.active {
   background: #e9e9dd;
 }
 
-/* line 237, ../sass/global.scss */
+/* line 261, ../sass/global.scss */
 table tr.odd td.active {
   background: #f3f4ee;
 }
 
-/* line 241, ../sass/global.scss */
+/* line 265, ../sass/global.scss */
 table tr.selected td.active,
 table tr.selected td {
   background: #ffc;
   border-color: #eeb;
 }
 
-/* line 245, ../sass/global.scss */
+/* line 269, ../sass/global.scss */
 table.system-status-report tr {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 248, ../sass/global.scss */
+/* line 272, ../sass/global.scss */
 table.system-status-report tr.ok {
   color: #255b1e;
   background-color: #e5ffe2;
 }
 
-/* line 252, ../sass/global.scss */
+/* line 276, ../sass/global.scss */
 table.system-status-report tr.info {
   color: #040f37;
   background-color: #bdf;
 }
 
-/* line 256, ../sass/global.scss */
+/* line 280, ../sass/global.scss */
 table.system-status-report tr.warning {
   color: #840;
   background-color: #fffce5;
 }
 
-/* line 260, ../sass/global.scss */
+/* line 284, ../sass/global.scss */
 table.system-status-report tr.error {
   color: #8c2e0b;
   background-color: #fef5f1;
@@ -316,13 +350,13 @@ table.system-status-report tr.error {
  * Exception for webkit bug with the right border of the last cell
  * in some tables, since it's webkit only, we can use :last-child
  */
-/* line 268, ../sass/global.scss */
+/* line 292, ../sass/global.scss */
 tr td:last-child {
   border-right: 1px solid #bebfb9;
   /* LTR */
 }
 
-/* line 275, ../sass/global.scss */
+/* line 299, ../sass/global.scss */
 .view-action-scope {
   /*	tr td.views-field{
   		padding: 0;
@@ -342,47 +376,47 @@ tr td:last-child {
   
   	}*/
 }
-/* line 276, ../sass/global.scss */
+/* line 300, ../sass/global.scss */
 .view-action-scope caption {
   font-size: 1.55em;
   text-align: left;
   padding: 10px 0;
   font-weight: bold;
 }
-/* line 299, ../sass/global.scss */
+/* line 323, ../sass/global.scss */
 .view-action-scope table.views-table > tbody > tr > th {
   width: 10%;
 }
-/* line 302, ../sass/global.scss */
+/* line 326, ../sass/global.scss */
 .view-action-scope table.views-table > tbody > tr > td {
   width: 30%;
   padding: 0;
 }
-/* line 306, ../sass/global.scss */
+/* line 330, ../sass/global.scss */
 .view-action-scope table table {
   padding: 0;
 }
 
-/* line 312, ../sass/global.scss */
+/* line 336, ../sass/global.scss */
 #block-oea-form-oea-scope-filter {
   background: #f2f2f2;
 }
-/* line 314, ../sass/global.scss */
+/* line 338, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .block-inner {
   padding: 20px;
 }
-/* line 318, ../sass/global.scss */
+/* line 342, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .form-item,
 #block-oea-form-oea-scope-filter .form-submit {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 322, ../sass/global.scss */
+/* line 346, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .form-submit {
   margin-top: 15px;
 }
 
-/* line 334, ../sass/global.scss */
+/* line 358, ../sass/global.scss */
 .field-name-field-cstats-indicators,
 .field-name-field-pop-av-age,
 .field-name-field-pop-sex,
@@ -396,7 +430,7 @@ tr td:last-child {
   tr.even .field_indicator_description{
   }*/
 }
-/* line 335, ../sass/global.scss */
+/* line 359, ../sass/global.scss */
 .field-name-field-cstats-indicators td, .field-name-field-cstats-indicators th,
 .field-name-field-pop-av-age td,
 .field-name-field-pop-av-age th,
@@ -416,7 +450,7 @@ tr td:last-child {
   border-right: 1px solid #ccc;
   text-align: center;
 }
-/* line 339, ../sass/global.scss */
+/* line 363, ../sass/global.scss */
 .field-name-field-cstats-indicators td:first-child, .field-name-field-cstats-indicators th:first-child,
 .field-name-field-pop-av-age td:first-child,
 .field-name-field-pop-av-age th:first-child,
@@ -435,7 +469,7 @@ tr td:last-child {
   width: 28%;
   background-color: #e3e3e3;
 }
-/* line 344, ../sass/global.scss */
+/* line 368, ../sass/global.scss */
 .field-name-field-cstats-indicators td,
 .field-name-field-pop-av-age td,
 .field-name-field-pop-sex td,
@@ -446,7 +480,7 @@ tr td:last-child {
 .field-name-field-popd-socioecon td {
   text-align: right;
 }
-/* line 349, ../sass/global.scss */
+/* line 373, ../sass/global.scss */
 .field-name-field-cstats-indicators tr.even td:first-child, .field-name-field-cstats-indicators tr.even th:first-child,
 .field-name-field-pop-av-age tr.even td:first-child,
 .field-name-field-pop-av-age tr.even th:first-child,
@@ -465,7 +499,7 @@ tr td:last-child {
   background-color: #ddd;
 }
 
-/* line 366, ../sass/global.scss */
+/* line 390, ../sass/global.scss */
 .field-name-field-pop-pea > .field-items > .field-item,
 .field-name-field-pop-total > .field-items > .field-item,
 .field-name-field-pop-growth > .field-items > .field-item,
@@ -475,7 +509,7 @@ tr td:last-child {
   padding-left: 28%;
   background: #ccc;
 }
-/* line 370, ../sass/global.scss */
+/* line 394, ../sass/global.scss */
 .field-name-field-pop-pea td, .field-name-field-pop-pea th,
 .field-name-field-pop-total td,
 .field-name-field-pop-total th,
@@ -491,7 +525,7 @@ tr td:last-child {
   border-right: 1px solid #ccc;
   text-align: center;
 }
-/* line 375, ../sass/global.scss */
+/* line 399, ../sass/global.scss */
 .field-name-field-pop-pea td,
 .field-name-field-pop-total td,
 .field-name-field-pop-growth td,
@@ -501,84 +535,84 @@ tr td:last-child {
   text-align: right;
 }
 
-/* line 379, ../sass/global.scss */
+/* line 403, ../sass/global.scss */
 .field-collection-view-final {
   border-bottom: 1px solid #bebfb9;
 }
 
-/* line 382, ../sass/global.scss */
+/* line 406, ../sass/global.scss */
 .field-collection-container {
   border: 0;
   margin: 0;
 }
 
-/* line 387, ../sass/global.scss */
+/* line 411, ../sass/global.scss */
 .block-boxes-indicators-box {
   margin-bottom: 30px;
 }
-/* line 389, ../sass/global.scss */
+/* line 413, ../sass/global.scss */
 .block-boxes-indicators-box a {
   background: #ddd;
   color: black;
   text-decoration: none;
   padding: 10px 15px;
 }
-/* line 394, ../sass/global.scss */
+/* line 418, ../sass/global.scss */
 .block-boxes-indicators-box a:hover {
   background: #e6e6e6;
 }
-/* line 397, ../sass/global.scss */
+/* line 421, ../sass/global.scss */
 .block-boxes-indicators-box a.active {
   background: #4071aa;
   color: white;
 }
 
-/* line 404, ../sass/global.scss */
+/* line 428, ../sass/global.scss */
 .node .field-name-body p {
   text-align: justify;
 }
 
-/* line 409, ../sass/global.scss */
+/* line 433, ../sass/global.scss */
 .webform-container-inline {
   padding: 15px 0;
   margin: 0;
   border-bottom: 1px solid #ccc;
 }
-/* line 413, ../sass/global.scss */
+/* line 437, ../sass/global.scss */
 .webform-container-inline > label {
   width: 30%;
   display: inline-block;
 }
 
-/* line 419, ../sass/global.scss */
+/* line 443, ../sass/global.scss */
 fieldset {
   padding: 19px;
   border: 1px solid #ddd;
   margin: 15px 0;
 }
-/* line 423, ../sass/global.scss */
+/* line 447, ../sass/global.scss */
 fieldset legend {
   padding: 0 5px;
 }
 
-/* line 429, ../sass/global.scss */
+/* line 453, ../sass/global.scss */
 .view-countries .views-row {
   padding: 15px;
   background: #eee;
   list-style: none;
   margin: 0 0 20px;
 }
-/* line 435, ../sass/global.scss */
+/* line 459, ../sass/global.scss */
 .view-countries .views-field-field-country-flag img {
   vertical-align: text-top;
 }
-/* line 438, ../sass/global.scss */
+/* line 462, ../sass/global.scss */
 .view-countries .views-field-php {
   font-size: 1.3em;
   font-weight: bold;
 }
 
-/* line 444, ../sass/global.scss */
+/* line 468, ../sass/global.scss */
 table td.mini a {
   background: #244060;
   font-weight: normal;
@@ -587,9 +621,22 @@ table td.mini a {
   text-decoration: none;
 }
 
-/* line 455, ../sass/global.scss */
+/* line 479, ../sass/global.scss */
 .node-legal-framework > .field, .node-legal-framework > .field-collection-container {
   margin-bottom: 1.5em;
   padding: 0.5em;
   background: #F8F8F8;
+}
+
+/* line 488, ../sass/global.scss */
+.node-official-links .field-collection-container .field-items .field-item {
+  margin: 0;
+}
+/* line 490, ../sass/global.scss */
+.node-official-links .field-collection-container .field-items .field-item .field-collection-view {
+  padding: 1em;
+  margin: 0;
+  background: #F5F5F5;
+  border-bottom: 0;
+  margin-bottom: 1em;
 }

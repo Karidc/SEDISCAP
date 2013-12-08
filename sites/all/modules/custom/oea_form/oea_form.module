@@ -28,6 +28,9 @@
   return $items;
 }*/
 
+function oea_form_menu_alter(&$items){
+  $items['user/password']['access callback'] = FALSE;
+}
 
 function oea_scope_filter_form($form, &$form_state) {
   $country_terms = taxonomy_get_tree(3);
