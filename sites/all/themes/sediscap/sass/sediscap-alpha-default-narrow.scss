@@ -1,12 +1,5 @@
-/* This file will hold styles that are loaded using the same media query as the narrow grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the normal and widescreen layouts. You may override these styles in the normal 
- *  and widescreen CSS files as appropriate. */
-
 @import 'compass';
-
-$blue:#244060;
-$sky:#dbedf4;
+@import "_colors.scss";
 
 .block-main-menu ul li{
 	width: 50%;
@@ -44,4 +37,21 @@ $sky:#dbedf4;
 
 #block-boxes-sidebar-menu-desc{
 	background: darken($sky,10%) url('../images/sidebar-menu-2.png') repeat-y right;
+}
+
+#block-boxes-copyright{
+	.block-inner {
+		padding: 0 15em;
+	}
+}
+
+#block-boxes-utp-logo {
+	width:auto;
+	margin:0;
+}
+
+
+.view-action-scope,
+.field-type-field-collection {
+	overflow: hidden;
 }

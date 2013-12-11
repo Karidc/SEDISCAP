@@ -28,6 +28,31 @@
   return $items;
 }*/
 
+function oea_form_init(){
+  if(isset($_SESSION['contrasted'])){
+    drupal_add_css(
+      path_to_theme() . '/css/contrast.css',
+      array(
+        'group' => CSS_THEME,
+        'weight' => 10000,
+      )
+    );
+
+    drupal_add_css(
+      path_to_theme() . '/css/ie/ie-7.css', 
+      array(
+        'group' => CSS_THEME,
+        'weight' => 115,
+        'browsers' => array(
+          'IE' => 'lte IE 7',
+          '!IE' => FALSE
+        ),
+        'preprocess' => FALSE
+      )
+    );
+  }
+}
+
 function oea_form_menu_alter(&$items){
   $items['user/password']['access callback'] = FALSE;
 }
@@ -83,17 +108,51 @@ function oea_scope_filter_form_submit($form, &$form_state) {
   drupal_goto(implode("/", $args) . $final_path , $params); 
 }
 
+function contrast_toggle_form($form, &$form_state) {
+  $form['activate'] = array(
+    '#type' => 'submit',
+    '#value' => t('Contrast colors'),
+    '#submit' => array('contrast_toggle_form_activate_submit',)
+  );
+  $form['de_activate'] = array(
+    '#type' => 'submit',
+    '#value' => t('Normal colors'),
+    '#submit' => array('contrast_toggle_form_deactivate_submit'),
+  );
+  return $form;
+}
+function contrast_toggle_form_activate_submit($form, &$form_state) {
+  if(!isset($_SESSION['contrasted']))
+    $_SESSION['contrasted'] = TRUE;
+}
+function contrast_toggle_form_deactivate_submit($form, &$form_state) {
+  if(isset($_SESSION['contrasted']))
+    unset($_SESSION['contrasted']);
+}
+
+
 function oea_form_block_info() {
   $blocks['oea_scope_filter'] = array(
     'info' => t('Scope filter'),
   );
+  $blocks['contrast_toggle'] = array(
+    'info' => t('Contrast activator'),
+  );
+
   return $blocks;
 }
 
 function oea_form_block_view($delta = '') {
-  $block['subject'] = '';
-  $block['content'] = drupal_get_form('oea_scope_filter_form');
-  return $block;
+  if($delta == 'oea_scope_filter'){
+    $block['subject'] = '';
+    $block['content'] = drupal_get_form('oea_scope_filter_form');
+    return $block;    
+  }
+  else if($delta == 'contrast_toggle'){
+    $block['subject'] = '';
+    $block['content'] = drupal_get_form('contrast_toggle_form');
+    return $block;    
+  } 
 }
 
 function oea_form_system_info_alter(&$info, $file, $type) {

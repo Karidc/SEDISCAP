@@ -1,12 +1,4 @@
-/* This file will hold styles that are loaded using the same media query as the wide grid. */
-/*
-.block-main-menu ul li{
-	&.sf-depth-1{
-		> a{
-			padding: 10px 10px 0;
-		}
-	}
-}*/
+@import "_colors.scss";
 
 .block-main-menu ul li{
 	width: 33%;
@@ -14,4 +6,10 @@
 
 #region-sidebar-first{
 	margin-right:10px;
+}
+
+#block-boxes-indicators-box span{
+	a{
+		display: inline;
+	}
 }

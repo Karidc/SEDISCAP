@@ -1,54 +1,67 @@
-/* This file will hold styles that are loaded using the same media query as the narrow grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the normal and widescreen layouts. You may override these styles in the normal 
- *  and widescreen CSS files as appropriate. */
-/* line 11, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 4, ../sass/sediscap-alpha-default-narrow.scss */
 .block-main-menu ul li {
   width: 50%;
 }
 
-/* line 15, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 8, ../sass/sediscap-alpha-default-narrow.scss */
 #block-superfish-2 {
   display: block;
 }
 
-/* line 19, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 12, ../sass/sediscap-alpha-default-narrow.scss */
 .responsive-menus-0-0 {
   display: none;
 }
 
-/* line 23, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 16, ../sass/sediscap-alpha-default-narrow.scss */
 #region-branding {
   margin: 15px 0 0;
 }
 
-/* line 26, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 19, ../sass/sediscap-alpha-default-narrow.scss */
 #region-menu {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 30, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 23, ../sass/sediscap-alpha-default-narrow.scss */
 #region-sidebar-first {
   background: #dbedf4 url('../images/sidebar-menu-2.png') repeat-y right;
 }
-/* line 32, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 25, ../sass/sediscap-alpha-default-narrow.scss */
 #region-sidebar-first .region-inner {
   background: url('../images/sidebar-menu-1.png') repeat-x bottom;
   padding-bottom: 60px;
 }
 
-/* line 37, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 30, ../sass/sediscap-alpha-default-narrow.scss */
 .responsive-layout-narrow #region-sidebar-first {
   width: 135px;
 }
 
-/* line 41, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 34, ../sass/sediscap-alpha-default-narrow.scss */
 #zone-content {
   margin-top: 20px;
 }
 
-/* line 45, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 38, ../sass/sediscap-alpha-default-narrow.scss */
 #block-boxes-sidebar-menu-desc {
   background: #b4d9e8 url("../images/sidebar-menu-2.png") repeat-y right;
+}
+
+/* line 43, ../sass/sediscap-alpha-default-narrow.scss */
+#block-boxes-copyright .block-inner {
+  padding: 0 15em;
+}
+
+/* line 48, ../sass/sediscap-alpha-default-narrow.scss */
+#block-boxes-utp-logo {
+  width: auto;
+  margin: 0;
+}
+
+/* line 55, ../sass/sediscap-alpha-default-narrow.scss */
+.view-action-scope,
+.field-type-field-collection {
+  overflow: hidden;
 }

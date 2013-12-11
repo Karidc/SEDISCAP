@@ -37,7 +37,6 @@
 
 function sediscap_preprocess_html(&$vars) {
   //drupal_add_js('http://www.purplegene.com/js/fixColors.js', array('type' => 'external'));
-  drupal_add_js(drupal_get_path('theme','sediscap') . '/js/jquery.fontSizer.js');
   drupal_add_js(drupal_get_path('theme','sediscap') . '/js/main.js');
 }
 

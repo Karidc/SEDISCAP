@@ -1,0 +1,238 @@
+@import 'compass';
+
+$blue:#dbedf4;
+$sky:#244060;
+
+$lightGray:#333;
+$darkGray:#ECECEC;
+
+$white:#000;
+$black:#fff;
+
+body {
+	background:$blue;
+	color:$black;
+}
+a,a:link{
+	color:$blue;
+}
+
+#section-header{
+	background:$white;
+}
+#zone-menu-wrapper {
+	background: $lightGray;
+}
+#region-sidebar-first{
+	background:$sky;
+}
+
+#block-delta-blocks-logo{
+	background:$white;
+}
+.responsive-menus.responsified span.toggler,
+.responsive-menus.responsified.responsive-toggled span.toggler {
+	color: $black;
+	background: $lightGray;
+}
+.responsive-menus.responsified .responsive-menus-simple{
+	background:$blue;
+}
+.block-main-menu ul li{
+	&.sf-depth-1{
+		> a{
+			border-bottom: 1px solid darken($lightGray,6%);
+			&:hover{
+				background:lighten($lightGray,2.5%);
+				color:$blue;
+			}
+			&.active{
+				background:lighten($blue,20%);
+				color:$white;
+				&:hover{
+					background:lighten($blue,20%);
+					color:$white;
+				}
+			}
+		}
+		&:hover,
+		&.sfHover{
+			> a{
+				background:lighten($lightGray,2.5%);
+				color:$blue;
+			}
+		}
+	}
+	&.sf-depth-2 a{
+		background:lighten($lightGray,2.5%);
+		color:$black;
+		border-bottom: 1px solid darken($lightGray,10%);
+		&:hover{
+			background:$white;
+		}
+	}
+}
+
+#zone-content{
+	background:$white;
+}
+#section-footer{
+	color:$white;
+}
+#block-boxes-copyright{
+	border-top: 1px solid $white;
+}
+
+#block-boxes-sidebar-menu-desc{
+	background: darken($sky,10%);
+}
+
+#block-menu-menu-first-sidebar{
+	ul li.leaf {
+		a{
+			border-bottom:1px solid darken($sky,10%);
+			&:hover{
+				background:darken($sky,5%) image-url('sidebar-menu-2.png',false,false) repeat-y right;
+			}
+		}
+	}
+}
+
+
+/**
+ * Tables.
+ */
+table {
+	border: 1px solid darken($lightGray,10%);
+	td,th{
+		color: $black;
+	}
+}
+
+tr.even,
+tr.odd {
+  border-color: darken($lightGray,10%);
+  background: lighten($lightGray,3.5%);
+}
+tr.odd {
+  background: $white;
+}
+th {
+	background: $lightGray;
+	border-color: darken($lightGray,10%);
+	&.active {
+		background: lighten($lightGray,4.5%);
+	}
+}
+tr td:last-child {
+  border-right: 1px solid darken($lightGray,10%); /* LTR */
+}
+
+
+
+
+
+#block-oea-form-oea-scope-filter{
+	background:lighten($lightGray,4.5%);
+}
+
+.field-name-field-cstats-indicators,
+.field-name-field-pop-av-age,
+.field-name-field-pop-sex,
+.field-name-field-pop-age,
+.field-name-field-pop-ethnic,
+.field-name-field-pop-regions,
+.field-name-field-popd-dis-type,
+.field-name-field-popd-socioecon{
+	td,th{
+		&:first-child{
+			background-color:lighten($lightGray,3.5%);
+		}
+	}
+	tr.even{
+		td,th{
+			&:first-child{
+				background-color:darken($lightGray,5%);
+			}
+		}
+	}
+}
+
+.field-name-field-pop-pea,
+.field-name-field-pop-total,
+.field-name-field-pop-growth,
+.field-name-field-popd-prevalence,
+.field-name-field-popd-home-dis,
+.field-name-field-popd-home-dis-func{
+	&>.field-items>.field-item{
+		background: darken($lightGray,5%);
+	}
+	td,th{
+		border-right: 1px solid darken($lightGray,5%);
+	}
+}
+.field-collection-view-final {
+	border-bottom: 1px solid darken($lightGray,10%);
+}
+.block-boxes-indicators-box{
+	a{
+		background:darken($lightGray,5%);
+		color: $black;
+		&:hover{
+			background:$lightGray;
+		}
+		&.active{
+			background:lighten($blue,20%);
+			color: $white;
+		}
+	}
+}
+
+
+.webform-container-inline{
+	border-bottom: 1px solid darken($lightGray,5%);
+}
+
+fieldset{
+	border: 1px solid darken($lightGray,5%);
+}
+
+.view-countries{
+	.views-row{
+		background: $lightGray;
+	}
+}
+
+table td.mini a {
+	background: $blue;
+	color: $white;
+}
+
+
+.node-legal-framework{
+	&>.field,
+	&>.field-collection-container{
+		background: lighten($lightGray,4.5%);
+	}
+}
+
+
+.node-official-links{
+	.field-collection-container .field-items .field-item{
+		.field-collection-view{
+			background: lighten($lightGray,4%);
+		}
+	}
+}
+
+#control-wrap {
+	li{
+		a{
+			background: $blue;
+			&:hover{
+				background: lighten($blue,20%);				
+			}
+		}
+	}
+}
+
