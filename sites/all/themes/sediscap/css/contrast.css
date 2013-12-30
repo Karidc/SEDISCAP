@@ -1,106 +1,114 @@
-/* line 12, ../sass/contrast.scss */
+/* line 15, ../sass/contrast.scss */
 body {
-  background: #dbedf4;
-  color: white;
+  background: #060606;
+  color: yellow !important;
 }
 
-/* line 16, ../sass/contrast.scss */
+/* line 19, ../sass/contrast.scss */
 a, a:link {
-  color: #dbedf4;
+  color: aqua !important;
 }
 
-/* line 20, ../sass/contrast.scss */
+/* line 23, ../sass/contrast.scss */
+a.active {
+  color: white !important;
+}
+
+/* line 27, ../sass/contrast.scss */
 #section-header {
   background: black;
 }
 
-/* line 23, ../sass/contrast.scss */
+/* line 30, ../sass/contrast.scss */
 #zone-menu-wrapper {
-  background: #333333;
+  background: #131313;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
-/* line 26, ../sass/contrast.scss */
+/* line 35, ../sass/contrast.scss */
 #region-sidebar-first {
   background: #244060;
 }
 
-/* line 30, ../sass/contrast.scss */
+/* line 39, ../sass/contrast.scss */
 #block-delta-blocks-logo {
   background: black;
 }
 
-/* line 34, ../sass/contrast.scss */
+/* line 43, ../sass/contrast.scss */
 .responsive-menus.responsified span.toggler,
 .responsive-menus.responsified.responsive-toggled span.toggler {
   color: white;
   background: #333333;
 }
 
-/* line 38, ../sass/contrast.scss */
+/* line 47, ../sass/contrast.scss */
 .responsive-menus.responsified .responsive-menus-simple {
   background: #dbedf4;
 }
 
-/* line 43, ../sass/contrast.scss */
+/* line 52, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-1 > a {
   border-bottom: 1px solid #242424;
 }
-/* line 45, ../sass/contrast.scss */
+/* line 54, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-1 > a:hover {
   background: #393939;
   color: #dbedf4;
 }
-/* line 49, ../sass/contrast.scss */
+/* line 58, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-1 > a.active {
-  background: white;
+  background: #1a1a1a;
   color: black;
 }
-/* line 52, ../sass/contrast.scss */
+/* line 61, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-1 > a.active:hover {
-  background: white;
+  background: #262626;
   color: black;
 }
-/* line 60, ../sass/contrast.scss */
+/* line 69, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-1:hover > a, .block-main-menu ul li.sf-depth-1.sfHover > a {
   background: #393939;
   color: #dbedf4;
 }
-/* line 66, ../sass/contrast.scss */
+/* line 75, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-2 a {
   background: #393939;
   color: white;
   border-bottom: 1px solid #1a1a1a;
 }
-/* line 70, ../sass/contrast.scss */
+/* line 79, ../sass/contrast.scss */
 .block-main-menu ul li.sf-depth-2 a:hover {
   background: black;
 }
 
-/* line 76, ../sass/contrast.scss */
+/* line 85, ../sass/contrast.scss */
 #zone-content {
   background: black;
 }
 
-/* line 79, ../sass/contrast.scss */
+/* line 88, ../sass/contrast.scss */
 #section-footer {
-  color: black;
+  color: yellow;
 }
 
-/* line 82, ../sass/contrast.scss */
+/* line 91, ../sass/contrast.scss */
 #block-boxes-copyright {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
 }
 
-/* line 86, ../sass/contrast.scss */
+/* line 95, ../sass/contrast.scss */
 #block-boxes-sidebar-menu-desc {
-  background: #16273b;
+  background: transparent !important;
+  border-bottom: 1px solid white;
 }
 
-/* line 92, ../sass/contrast.scss */
+/* line 102, ../sass/contrast.scss */
 #block-menu-menu-first-sidebar ul li.leaf a {
   border-bottom: 1px solid #16273b;
 }
-/* line 94, ../sass/contrast.scss */
+/* line 104, ../sass/contrast.scss */
 #block-menu-menu-first-sidebar ul li.leaf a:hover {
   background: #1d344d url('../images/sidebar-menu-2.png') repeat-y right;
 }
@@ -108,49 +116,52 @@ a, a:link {
 /**
  * Tables.
  */
-/* line 105, ../sass/contrast.scss */
+/* line 115, ../sass/contrast.scss */
 table {
   border: 1px solid #1a1a1a;
 }
-/* line 107, ../sass/contrast.scss */
+/* line 117, ../sass/contrast.scss */
 table td, table th {
-  color: white;
+  color: yellow;
 }
 
-/* line 113, ../sass/contrast.scss */
+/* line 122, ../sass/contrast.scss */
+.node-page table {
+  border: 1px solid yellow;
+}
+
+/* line 127, ../sass/contrast.scss */
 tr.even,
 tr.odd {
   border-color: #1a1a1a;
-  background: #3c3c3c;
+  background: #1a1a1a;
 }
 
-/* line 117, ../sass/contrast.scss */
+/* line 131, ../sass/contrast.scss */
 tr.odd {
   background: black;
 }
 
-/* line 120, ../sass/contrast.scss */
+/* line 134, ../sass/contrast.scss */
 th {
-  background: #333333;
-  border-color: #1a1a1a;
+  background: #0d0d0d;
+  border-color: #393939;
 }
-/* line 123, ../sass/contrast.scss */
+/* line 137, ../sass/contrast.scss */
 th.active {
-  background: #3e3e3e;
+  background: #1a1a1a;
 }
 
-/* line 127, ../sass/contrast.scss */
+/*
 tr td:last-child {
-  border-right: 1px solid #1a1a1a;
-  /* LTR */
-}
-
-/* line 135, ../sass/contrast.scss */
+  border-right: 1px solid darken($lightGray,10%); 
+}*/
+/* line 151, ../sass/contrast.scss */
 #block-oea-form-oea-scope-filter {
-  background: #3e3e3e;
+  background: #4d4d4d;
 }
 
-/* line 148, ../sass/contrast.scss */
+/* line 164, ../sass/contrast.scss */
 .field-name-field-cstats-indicators td:first-child, .field-name-field-cstats-indicators th:first-child,
 .field-name-field-pop-av-age td:first-child,
 .field-name-field-pop-av-age th:first-child,
@@ -166,9 +177,9 @@ tr td:last-child {
 .field-name-field-popd-dis-type th:first-child,
 .field-name-field-popd-socioecon td:first-child,
 .field-name-field-popd-socioecon th:first-child {
-  background-color: #3c3c3c;
+  background-color: #282828;
 }
-/* line 154, ../sass/contrast.scss */
+/* line 170, ../sass/contrast.scss */
 .field-name-field-cstats-indicators tr.even td:first-child, .field-name-field-cstats-indicators tr.even th:first-child,
 .field-name-field-pop-av-age tr.even td:first-child,
 .field-name-field-pop-av-age tr.even th:first-child,
@@ -187,7 +198,7 @@ tr td:last-child {
   background-color: #262626;
 }
 
-/* line 167, ../sass/contrast.scss */
+/* line 183, ../sass/contrast.scss */
 .field-name-field-pop-pea > .field-items > .field-item,
 .field-name-field-pop-total > .field-items > .field-item,
 .field-name-field-pop-growth > .field-items > .field-item,
@@ -196,7 +207,7 @@ tr td:last-child {
 .field-name-field-popd-home-dis-func > .field-items > .field-item {
   background: #262626;
 }
-/* line 170, ../sass/contrast.scss */
+/* line 186, ../sass/contrast.scss */
 .field-name-field-pop-pea td, .field-name-field-pop-pea th,
 .field-name-field-pop-total td,
 .field-name-field-pop-total th,
@@ -211,62 +222,70 @@ tr td:last-child {
   border-right: 1px solid #262626;
 }
 
-/* line 174, ../sass/contrast.scss */
+/* line 190, ../sass/contrast.scss */
 .field-collection-view-final {
   border-bottom: 1px solid #1a1a1a;
 }
 
-/* line 178, ../sass/contrast.scss */
+/* line 194, ../sass/contrast.scss */
 .block-boxes-indicators-box a {
   background: #262626;
-  color: white;
+  color: aqua;
 }
-/* line 181, ../sass/contrast.scss */
+/* line 197, ../sass/contrast.scss */
 .block-boxes-indicators-box a:hover {
   background: #333333;
 }
-/* line 184, ../sass/contrast.scss */
+/* line 200, ../sass/contrast.scss */
 .block-boxes-indicators-box a.active {
-  background: white;
-  color: black;
+  background: #595959;
 }
 
-/* line 192, ../sass/contrast.scss */
+/* line 209, ../sass/contrast.scss */
 .webform-container-inline {
   border-bottom: 1px solid #262626;
 }
 
-/* line 196, ../sass/contrast.scss */
+/* line 213, ../sass/contrast.scss */
 fieldset {
   border: 1px solid #262626;
 }
 
-/* line 201, ../sass/contrast.scss */
+/* line 218, ../sass/contrast.scss */
 .view-countries .views-row {
-  background: #333333;
+  background: transparent;
+  border: 1px solid;
 }
 
-/* line 206, ../sass/contrast.scss */
+/* line 224, ../sass/contrast.scss */
 table td.mini a {
   background: #dbedf4;
   color: black;
 }
 
-/* line 214, ../sass/contrast.scss */
+/* line 232, ../sass/contrast.scss */
 .node-legal-framework > .field, .node-legal-framework > .field-collection-container {
-  background: #3e3e3e;
+  background: transparent;
+  border: 1px solid;
 }
 
-/* line 222, ../sass/contrast.scss */
+/* line 241, ../sass/contrast.scss */
 .node-official-links .field-collection-container .field-items .field-item .field-collection-view {
-  background: #3d3d3d;
+  background: transparent;
+  border: 1px solid;
 }
 
-/* line 230, ../sass/contrast.scss */
+/* line 250, ../sass/contrast.scss */
 #control-wrap li a {
   background: #dbedf4;
 }
-/* line 232, ../sass/contrast.scss */
+/* line 252, ../sass/contrast.scss */
 #control-wrap li a:hover {
   background: white;
+}
+
+/* line 260, ../sass/contrast.scss */
+#region-sidebar-first .region-inner {
+  background: transparent;
+  padding-bottom: 0;
 }

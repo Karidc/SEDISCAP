@@ -27,6 +27,16 @@
 		padding-bottom:60px;
 	}
 }
+.contrast-mode-on{
+	#region-sidebar-first{
+		background:none;
+		.region-inner{
+			background:none;
+			padding-bottom:0;
+		}
+	}
+}
+
 .responsive-layout-narrow #region-sidebar-first{
 	width: 135px;
 }

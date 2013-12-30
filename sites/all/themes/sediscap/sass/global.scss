@@ -165,12 +165,16 @@ h1,h2{
 	margin-bottom:1em;
 	background:white;
 	min-height: 40em;
+	padding-bottom: 2em;
 }
 #section-footer{
 	color:white;
 	.block-title{
 		margin-bottom:1em;
 	}
+}
+#region-footer-first {
+	padding-top: 1em;
 }
 #boxes-box-footer_accesibility{
 	li{
@@ -320,9 +324,10 @@ th {
  * Exception for webkit bug with the right border of the last cell
  * in some tables, since it's webkit only, we can use :last-child
  */
-tr td:last-child {
-  border-right: 1px solid #bebfb9; /* LTR */
-}
+
+/*tr td:last-child {
+  border-right: 1px solid #bebfb9; /* LTR 
+}*/
 
 
 

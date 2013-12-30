@@ -9,19 +9,28 @@ $darkGray:#ECECEC;
 $white:#000;
 $black:#fff;
 
+$link:#00FFFF;
+$text:yellow;
+
 body {
-	background:$blue;
-	color:$black;
+	background:#060606;
+	color:$text !important;
 }
 a,a:link{
-	color:$blue;
+	color:$link !important;
+}
+
+a.active{
+	color:white !important;
 }
 
 #section-header{
 	background:$white;
 }
 #zone-menu-wrapper {
-	background: $lightGray;
+	background: #131313;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
 #region-sidebar-first{
 	background:$sky;
@@ -47,10 +56,10 @@ a,a:link{
 				color:$blue;
 			}
 			&.active{
-				background:lighten($blue,20%);
+				background:lighten($white,10%);
 				color:$white;
 				&:hover{
-					background:lighten($blue,20%);
+					background:lighten($white,15%);
 					color:$white;
 				}
 			}
@@ -77,14 +86,15 @@ a,a:link{
 	background:$white;
 }
 #section-footer{
-	color:$white;
+	color:$text;
 }
 #block-boxes-copyright{
-	border-top: 1px solid $white;
+	border-top: 1px solid white;
 }
 
 #block-boxes-sidebar-menu-desc{
-	background: darken($sky,10%);
+	background: transparent !important;
+	border-bottom: 1px solid white;
 }
 
 #block-menu-menu-first-sidebar{
@@ -105,35 +115,41 @@ a,a:link{
 table {
 	border: 1px solid darken($lightGray,10%);
 	td,th{
-		color: $black;
+		color: $text;
 	}
+}
+
+.node-page table{
+	border: 1px solid $text;
 }
 
 tr.even,
 tr.odd {
   border-color: darken($lightGray,10%);
-  background: lighten($lightGray,3.5%);
+  background: darken($lightGray,10%);
 }
 tr.odd {
   background: $white;
 }
 th {
-	background: $lightGray;
-	border-color: darken($lightGray,10%);
+	background: darken($lightGray,15%);
+	border-color: lighten($lightGray,2.5%);
 	&.active {
-		background: lighten($lightGray,4.5%);
+		background: darken($lightGray,10%);
 	}
 }
+
+/*
 tr td:last-child {
-  border-right: 1px solid darken($lightGray,10%); /* LTR */
-}
+  border-right: 1px solid darken($lightGray,10%); 
+}*/
 
 
 
 
 
 #block-oea-form-oea-scope-filter{
-	background:lighten($lightGray,4.5%);
+	background:lighten($lightGray,10%);
 }
 
 .field-name-field-cstats-indicators,
@@ -146,7 +162,7 @@ tr td:last-child {
 .field-name-field-popd-socioecon{
 	td,th{
 		&:first-child{
-			background-color:lighten($lightGray,3.5%);
+			background-color:darken($lightGray,4.5%);
 		}
 	}
 	tr.even{
@@ -177,13 +193,14 @@ tr td:last-child {
 .block-boxes-indicators-box{
 	a{
 		background:darken($lightGray,5%);
-		color: $black;
+		color: $link;
 		&:hover{
 			background:$lightGray;
 		}
 		&.active{
-			background:lighten($blue,20%);
-			color: $white;
+			background:lighten($lightGray,15%);
+			//background:lighten($blue,20%);
+			//color: $white;
 		}
 	}
 }
@@ -199,7 +216,8 @@ fieldset{
 
 .view-countries{
 	.views-row{
-		background: $lightGray;
+		background: transparent;
+		border: 1px solid;
 	}
 }
 
@@ -212,7 +230,8 @@ table td.mini a {
 .node-legal-framework{
 	&>.field,
 	&>.field-collection-container{
-		background: lighten($lightGray,4.5%);
+		background: transparent;
+		border: 1px solid;
 	}
 }
 
@@ -220,7 +239,8 @@ table td.mini a {
 .node-official-links{
 	.field-collection-container .field-items .field-item{
 		.field-collection-view{
-			background: lighten($lightGray,4%);
+			background: transparent;
+			border: 1px solid;
 		}
 	}
 }
@@ -234,5 +254,11 @@ table td.mini a {
 			}
 		}
 	}
+}
+
+
+#region-sidebar-first .region-inner {
+  background: transparent;
+  padding-bottom: 0;
 }
 

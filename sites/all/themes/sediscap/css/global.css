@@ -224,24 +224,30 @@ h1.site-name, h2.site-name {
   margin-bottom: 1em;
   background: white;
   min-height: 40em;
+  padding-bottom: 2em;
 }
 
-/* line 169, ../sass/global.scss */
+/* line 170, ../sass/global.scss */
 #section-footer {
   color: white;
 }
-/* line 171, ../sass/global.scss */
+/* line 172, ../sass/global.scss */
 #section-footer .block-title {
   margin-bottom: 1em;
 }
 
 /* line 176, ../sass/global.scss */
+#region-footer-first {
+  padding-top: 1em;
+}
+
+/* line 180, ../sass/global.scss */
 #boxes-box-footer_accesibility li {
   display: inline-block;
   margin-right: 1.5em;
 }
 
-/* line 181, ../sass/global.scss */
+/* line 185, ../sass/global.scss */
 #block-boxes-utp-logo {
   float: right;
   text-align: center;
@@ -249,7 +255,7 @@ h1.site-name, h2.site-name {
   margin: 3em 0;
 }
 
-/* line 187, ../sass/global.scss */
+/* line 191, ../sass/global.scss */
 #block-boxes-copyright {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -258,50 +264,50 @@ h1.site-name, h2.site-name {
   text-align: center;
 }
 
-/* line 195, ../sass/global.scss */
+/* line 199, ../sass/global.scss */
 #block-menu-menu-ambitos {
   padding: 5px 15px;
 }
 
-/* line 199, ../sass/global.scss */
+/* line 203, ../sass/global.scss */
 #block-boxes-indicators-box span {
   margin-right: 2px;
 }
-/* line 201, ../sass/global.scss */
+/* line 205, ../sass/global.scss */
 #block-boxes-indicators-box span a {
   font-size: 1.15em;
   display: block;
 }
 
-/* line 207, ../sass/global.scss */
+/* line 211, ../sass/global.scss */
 #block-boxes-sidebar-menu-desc {
   padding: 10px;
   background: #b4d9e8;
 }
-/* line 210, ../sass/global.scss */
+/* line 214, ../sass/global.scss */
 #block-boxes-sidebar-menu-desc .boxes-box-content {
   margin-top: 5px;
 }
 
-/* line 215, ../sass/global.scss */
+/* line 219, ../sass/global.scss */
 .item-list li {
   list-style: disc;
 }
 
-/* line 220, ../sass/global.scss */
+/* line 224, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 224, ../sass/global.scss */
+/* line 228, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf a {
   border-bottom: 1px solid #b4d9e8;
   text-decoration: none;
   display: block;
   padding: 15px;
 }
-/* line 229, ../sass/global.scss */
+/* line 233, ../sass/global.scss */
 #block-menu-menu-first-sidebar ul li.leaf a:hover {
   background: #c7e3ee url('../images/sidebar-menu-2.png') repeat-y right;
 }
@@ -309,14 +315,14 @@ h1.site-name, h2.site-name {
 /**
  * Tables.
  */
-/* line 240, ../sass/global.scss */
+/* line 244, ../sass/global.scss */
 table {
   width: 100%;
   font-size: 0.923em;
   margin: 0 0 10px;
   border: 1px solid #bebfb9;
 }
-/* line 245, ../sass/global.scss */
+/* line 249, ../sass/global.scss */
 table td, table th {
   vertical-align: top;
   padding: 8px 10px;
@@ -324,7 +330,7 @@ table td, table th {
   color: #000;
 }
 
-/* line 254, ../sass/global.scss */
+/* line 258, ../sass/global.scss */
 tr.even,
 tr.odd {
   border-width: 0;
@@ -333,12 +339,12 @@ tr.odd {
   background: #f5f5f5;
 }
 
-/* line 260, ../sass/global.scss */
+/* line 264, ../sass/global.scss */
 tr.odd {
   background: white;
 }
 
-/* line 263, ../sass/global.scss */
+/* line 267, ../sass/global.scss */
 th {
   text-transform: uppercase;
   background: #ececec;
@@ -348,21 +354,21 @@ th {
   border-color: #d3d3d3;
   padding: 3px 10px;
 }
-/* line 271, ../sass/global.scss */
+/* line 275, ../sass/global.scss */
 th.active {
   background: #f7f7f7;
 }
-/* line 274, ../sass/global.scss */
+/* line 278, ../sass/global.scss */
 th a {
   display: block;
   position: relative;
 }
-/* line 279, ../sass/global.scss */
+/* line 283, ../sass/global.scss */
 th.active a {
   padding: 0 25px 0 0;
   /* LTR */
 }
-/* line 282, ../sass/global.scss */
+/* line 286, ../sass/global.scss */
 th.active img {
   position: absolute;
   top: 3px;
@@ -374,13 +380,10 @@ th.active img {
  * Exception for webkit bug with the right border of the last cell
  * in some tables, since it's webkit only, we can use :last-child
  */
-/* line 323, ../sass/global.scss */
-tr td:last-child {
-  border-right: 1px solid #bebfb9;
-  /* LTR */
-}
-
-/* line 330, ../sass/global.scss */
+                                   /*tr td:last-child {
+  border-right: 1px solid #bebfb9; /* LTR 
+}*/
+/* line 335, ../sass/global.scss */
 .view-action-scope {
   width: 100%;
   overflow: scroll;
@@ -402,47 +405,47 @@ tr td:last-child {
   
   	}*/
 }
-/* line 333, ../sass/global.scss */
+/* line 338, ../sass/global.scss */
 .view-action-scope caption {
   font-size: 1.55em;
   text-align: left;
   padding: 10px 0;
   font-weight: bold;
 }
-/* line 356, ../sass/global.scss */
+/* line 361, ../sass/global.scss */
 .view-action-scope table.views-table > tbody > tr > th {
   width: 10%;
 }
-/* line 359, ../sass/global.scss */
+/* line 364, ../sass/global.scss */
 .view-action-scope table.views-table > tbody > tr > td {
   width: 30%;
   padding: 0;
 }
-/* line 363, ../sass/global.scss */
+/* line 368, ../sass/global.scss */
 .view-action-scope table table {
   padding: 0;
 }
 
-/* line 369, ../sass/global.scss */
+/* line 374, ../sass/global.scss */
 #block-oea-form-oea-scope-filter {
   background: #f2f2f2;
 }
-/* line 371, ../sass/global.scss */
+/* line 376, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .block-inner {
   padding: 20px;
 }
-/* line 375, ../sass/global.scss */
+/* line 380, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .form-item,
 #block-oea-form-oea-scope-filter .form-submit {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 379, ../sass/global.scss */
+/* line 384, ../sass/global.scss */
 #block-oea-form-oea-scope-filter .form-submit {
   margin-top: 15px;
 }
 
-/* line 391, ../sass/global.scss */
+/* line 396, ../sass/global.scss */
 .field-name-field-cstats-indicators,
 .field-name-field-pop-av-age,
 .field-name-field-pop-sex,
@@ -456,7 +459,7 @@ tr td:last-child {
   tr.even .field_indicator_description{
   }*/
 }
-/* line 392, ../sass/global.scss */
+/* line 397, ../sass/global.scss */
 .field-name-field-cstats-indicators td, .field-name-field-cstats-indicators th,
 .field-name-field-pop-av-age td,
 .field-name-field-pop-av-age th,
@@ -476,7 +479,7 @@ tr td:last-child {
   border-right: 1px solid #ccc;
   text-align: center;
 }
-/* line 396, ../sass/global.scss */
+/* line 401, ../sass/global.scss */
 .field-name-field-cstats-indicators td:first-child, .field-name-field-cstats-indicators th:first-child,
 .field-name-field-pop-av-age td:first-child,
 .field-name-field-pop-av-age th:first-child,
@@ -495,7 +498,7 @@ tr td:last-child {
   width: 28%;
   background-color: #e3e3e3;
 }
-/* line 401, ../sass/global.scss */
+/* line 406, ../sass/global.scss */
 .field-name-field-cstats-indicators td,
 .field-name-field-pop-av-age td,
 .field-name-field-pop-sex td,
@@ -506,7 +509,7 @@ tr td:last-child {
 .field-name-field-popd-socioecon td {
   text-align: right;
 }
-/* line 406, ../sass/global.scss */
+/* line 411, ../sass/global.scss */
 .field-name-field-cstats-indicators tr.even td:first-child, .field-name-field-cstats-indicators tr.even th:first-child,
 .field-name-field-pop-av-age tr.even td:first-child,
 .field-name-field-pop-av-age tr.even th:first-child,
@@ -525,7 +528,7 @@ tr td:last-child {
   background-color: #ddd;
 }
 
-/* line 423, ../sass/global.scss */
+/* line 428, ../sass/global.scss */
 .field-name-field-pop-pea > .field-items > .field-item,
 .field-name-field-pop-total > .field-items > .field-item,
 .field-name-field-pop-growth > .field-items > .field-item,
@@ -535,7 +538,7 @@ tr td:last-child {
   padding-left: 28%;
   background: #ccc;
 }
-/* line 427, ../sass/global.scss */
+/* line 432, ../sass/global.scss */
 .field-name-field-pop-pea td, .field-name-field-pop-pea th,
 .field-name-field-pop-total td,
 .field-name-field-pop-total th,
@@ -551,7 +554,7 @@ tr td:last-child {
   border-right: 1px solid #ccc;
   text-align: center;
 }
-/* line 432, ../sass/global.scss */
+/* line 437, ../sass/global.scss */
 .field-name-field-pop-pea td,
 .field-name-field-pop-total td,
 .field-name-field-pop-growth td,
@@ -561,84 +564,84 @@ tr td:last-child {
   text-align: right;
 }
 
-/* line 436, ../sass/global.scss */
+/* line 441, ../sass/global.scss */
 .field-collection-view-final {
   border-bottom: 1px solid #bebfb9;
 }
 
-/* line 439, ../sass/global.scss */
+/* line 444, ../sass/global.scss */
 .field-collection-container {
   border: 0;
   margin: 0;
 }
 
-/* line 444, ../sass/global.scss */
+/* line 449, ../sass/global.scss */
 .block-boxes-indicators-box {
   margin-bottom: 30px;
 }
-/* line 446, ../sass/global.scss */
+/* line 451, ../sass/global.scss */
 .block-boxes-indicators-box a {
   background: #ddd;
   color: black;
   text-decoration: none;
   padding: 10px 15px;
 }
-/* line 451, ../sass/global.scss */
+/* line 456, ../sass/global.scss */
 .block-boxes-indicators-box a:hover {
   background: #e6e6e6;
 }
-/* line 454, ../sass/global.scss */
+/* line 459, ../sass/global.scss */
 .block-boxes-indicators-box a.active {
   background: #4071aa;
   color: white;
 }
 
-/* line 461, ../sass/global.scss */
+/* line 466, ../sass/global.scss */
 .node .field-name-body p {
   text-align: justify;
 }
 
-/* line 466, ../sass/global.scss */
+/* line 471, ../sass/global.scss */
 .webform-container-inline {
   padding: 15px 0;
   margin: 0;
   border-bottom: 1px solid #ccc;
 }
-/* line 470, ../sass/global.scss */
+/* line 475, ../sass/global.scss */
 .webform-container-inline > label {
   width: 30%;
   display: inline-block;
 }
 
-/* line 476, ../sass/global.scss */
+/* line 481, ../sass/global.scss */
 fieldset {
   padding: 19px;
   border: 1px solid #ddd;
   margin: 15px 0;
 }
-/* line 480, ../sass/global.scss */
+/* line 485, ../sass/global.scss */
 fieldset legend {
   padding: 0 5px;
 }
 
-/* line 486, ../sass/global.scss */
+/* line 491, ../sass/global.scss */
 .view-countries .views-row {
   padding: 15px;
   background: #eee;
   list-style: none;
   margin: 0 0 20px;
 }
-/* line 492, ../sass/global.scss */
+/* line 497, ../sass/global.scss */
 .view-countries .views-field-field-country-flag img {
   vertical-align: text-top;
 }
-/* line 495, ../sass/global.scss */
+/* line 500, ../sass/global.scss */
 .view-countries .views-field-php {
   font-size: 1.3em;
   font-weight: bold;
 }
 
-/* line 501, ../sass/global.scss */
+/* line 506, ../sass/global.scss */
 table td.mini a {
   background: #244060;
   font-weight: normal;
@@ -647,18 +650,18 @@ table td.mini a {
   text-decoration: none;
 }
 
-/* line 512, ../sass/global.scss */
+/* line 517, ../sass/global.scss */
 .node-legal-framework > .field, .node-legal-framework > .field-collection-container {
   margin-bottom: 1.5em;
   padding: 0.5em;
   background: #F8F8F8;
 }
 
-/* line 521, ../sass/global.scss */
+/* line 526, ../sass/global.scss */
 .node-official-links .field-collection-container .field-items .field-item {
   margin: 0;
 }
-/* line 523, ../sass/global.scss */
+/* line 528, ../sass/global.scss */
 .node-official-links .field-collection-container .field-items .field-item .field-collection-view {
   padding: 1em;
   margin: 0;
@@ -667,24 +670,24 @@ table td.mini a {
   margin-bottom: 1em;
 }
 
-/* line 533, ../sass/global.scss */
+/* line 538, ../sass/global.scss */
 .zoom-controler {
   text-align: right;
 }
 
-/* line 536, ../sass/global.scss */
+/* line 541, ../sass/global.scss */
 #control-wrap {
   display: inline-block;
 }
-/* line 538, ../sass/global.scss */
+/* line 543, ../sass/global.scss */
 #control-wrap #controls {
   margin: 0;
 }
-/* line 541, ../sass/global.scss */
+/* line 546, ../sass/global.scss */
 #control-wrap li {
   display: inline-block;
 }
-/* line 543, ../sass/global.scss */
+/* line 548, ../sass/global.scss */
 #control-wrap li a {
   text-decoration: none;
   background: #b4d9e8;
@@ -697,12 +700,12 @@ table td.mini a {
   text-align: center;
   line-height: 1.1;
 }
-/* line 554, ../sass/global.scss */
+/* line 559, ../sass/global.scss */
 #control-wrap li a:hover {
   background: #c7e3ee;
 }
 
-/* line 562, ../sass/global.scss */
+/* line 567, ../sass/global.scss */
 .field-type-field-collection {
   width: 100%;
   overflow: scroll;

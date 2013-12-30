@@ -57,6 +57,12 @@ function oea_form_menu_alter(&$items){
   $items['user/password']['access callback'] = FALSE;
 }
 
+function oea_form_preprocess_html(&$variables) {
+  if(isset($_SESSION['contrasted']))
+    $variables['classes_array'][] = 'contrast-mode-on';
+}
+
+
 function oea_scope_filter_form($form, &$form_state) {
   $country_terms = taxonomy_get_tree(3);
   $ordered_countries = array();
@@ -109,15 +115,18 @@ function oea_scope_filter_form_submit($form, &$form_state) {
 }
 
 function contrast_toggle_form($form, &$form_state) {
-  $form['activate'] = array(
-    '#type' => 'submit',
-    '#value' => t('Contrast colors'),
-    '#submit' => array('contrast_toggle_form_activate_submit',)
+  $form['label'] = array(
+    '#markup' => t('Appearance: '),
   );
   $form['de_activate'] = array(
     '#type' => 'submit',
     '#value' => t('Normal colors'),
     '#submit' => array('contrast_toggle_form_deactivate_submit'),
+  );
+  $form['activate'] = array(
+    '#type' => 'submit',
+    '#value' => t('Contrast colors'),
+    '#submit' => array('contrast_toggle_form_activate_submit',)
   );
   return $form;
 }

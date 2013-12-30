@@ -34,33 +34,43 @@
   padding-bottom: 60px;
 }
 
-/* line 30, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 31, ../sass/sediscap-alpha-default-narrow.scss */
+.contrast-mode-on #region-sidebar-first {
+  background: none;
+}
+/* line 33, ../sass/sediscap-alpha-default-narrow.scss */
+.contrast-mode-on #region-sidebar-first .region-inner {
+  background: none;
+  padding-bottom: 0;
+}
+
+/* line 40, ../sass/sediscap-alpha-default-narrow.scss */
 .responsive-layout-narrow #region-sidebar-first {
   width: 135px;
 }
 
-/* line 34, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 44, ../sass/sediscap-alpha-default-narrow.scss */
 #zone-content {
   margin-top: 20px;
 }
 
-/* line 38, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 48, ../sass/sediscap-alpha-default-narrow.scss */
 #block-boxes-sidebar-menu-desc {
   background: #b4d9e8 url("../images/sidebar-menu-2.png") repeat-y right;
 }
 
-/* line 43, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 53, ../sass/sediscap-alpha-default-narrow.scss */
 #block-boxes-copyright .block-inner {
   padding: 0 15em;
 }
 
-/* line 48, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 58, ../sass/sediscap-alpha-default-narrow.scss */
 #block-boxes-utp-logo {
   width: auto;
   margin: 0;
 }
 
-/* line 55, ../sass/sediscap-alpha-default-narrow.scss */
+/* line 65, ../sass/sediscap-alpha-default-narrow.scss */
 .view-action-scope,
 .field-type-field-collection {
   overflow: hidden;
