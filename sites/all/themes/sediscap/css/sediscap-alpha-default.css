@@ -1,6 +1,11 @@
 /* line 3, ../sass/sediscap-alpha-default.scss */
+#block-delta-blocks-logo {
+  margin: 1.9em 0 0;
+}
+
+/* line 6, ../sass/sediscap-alpha-default.scss */
 #block-delta-blocks-site-name {
-  margin: 18px 0;
+  margin: 3em 0 0;
   float: left;
   width: 345px;
   text-align: left;

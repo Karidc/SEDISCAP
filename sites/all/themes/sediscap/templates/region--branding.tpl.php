@@ -27,16 +27,29 @@
       </div>
     <?php endif; ?>
     <?php print $content; ?>
+    <?php 
+    print l(
+      t('Accessibility tools'),
+      'accessibility-tools',
+      array(
+        'attributes' => array(
+          'class' => array('atools-link'),
+          //'title' => 'Un compendio de programas informaticos de accesiblidad.' ,
+          'title' => t('A summary of accessibility software tools.') ,
+        ),
+      )
+    );
+    ?>
     <div class="zoom-controler">
       <span><?php print t('Font size'); ?></span>
       <!-- <div id="control-wrap"></div> -->
       <div id="control-wrap">
         <ul id="controls">
           <li>
-            <a id="fs-minus" href="#" title="Smaller Text">-</a>
+            <a id="fs-minus" href="#" title="<?php print t('Smaller text');?>">-</a>
           </li>
           <li>
-            <a id="fs-plus" href="#" title="Larger Text">+</a>
+            <a id="fs-plus" href="#" title="<?php print t('Larger text');?>">+</a>
           </li>
         </ul>
       </div>

@@ -65,3 +65,17 @@
 .field-type-field-collection {
 	overflow: hidden;
 }
+
+.responsive-layout-narrow #region-branding{
+	text-align: center
+}
+
+.responsive-layout-narrow #region-branding .region-branding-inner>* {
+	float: left;
+	width:100%;
+	margin: 0.6em 0;
+	&>*{
+		padding: 0 10em;
+		text-align: center;
+	}
+}

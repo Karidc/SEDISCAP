@@ -6,7 +6,7 @@ body {
 
 /* line 19, ../sass/contrast.scss */
 a, a:link {
-  color: aqua !important;
+  color: cyan !important;
 }
 
 /* line 23, ../sass/contrast.scss */
@@ -230,7 +230,7 @@ tr td:last-child {
 /* line 194, ../sass/contrast.scss */
 .block-boxes-indicators-box a {
   background: #262626;
-  color: aqua;
+  color: cyan;
 }
 /* line 197, ../sass/contrast.scss */
 .block-boxes-indicators-box a:hover {
@@ -288,4 +288,132 @@ table td.mini a {
 #region-sidebar-first .region-inner {
   background: transparent;
   padding-bottom: 0;
+}
+
+/* line 270, ../sass/contrast.scss */
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  border: 1px solid white;
+  background: black;
+  border-bottom: 3px solid white;
+  color: cyan !important;
+}
+/* line 275, ../sass/contrast.scss */
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: #080f16;
+  color: white !important;
+}
+
+/* line 283, ../sass/contrast.scss */
+#control-wrap li a {
+  border: 1px solid white;
+  background: black;
+  color: cyan !important;
+}
+/* line 287, ../sass/contrast.scss */
+#control-wrap li a:hover {
+  background: #080f16;
+  color: white !important;
+}
+
+/* line 296, ../sass/contrast.scss */
+ul.primary li a {
+  background-color: black;
+}
+
+/* line 299, ../sass/contrast.scss */
+ul.primary li a:hover {
+  background-color: #222;
+}
+
+/* line 302, ../sass/contrast.scss */
+ul.primary li.active a {
+  background-color: #444;
+}
+
+/* line 307, ../sass/contrast.scss */
+.year-view div.month-view div.date-nav {
+  background-color: #333;
+}
+
+/* line 310, ../sass/contrast.scss */
+.calendar-calendar th.days {
+  background-color: #222;
+  color: white;
+}
+
+/* line 314, ../sass/contrast.scss */
+.calendar-calendar tr {
+  background: black;
+}
+
+/* line 317, ../sass/contrast.scss */
+.calendar-calendar td {
+  color: white;
+}
+
+/* line 320, ../sass/contrast.scss */
+.calendar-calendar table.mini td.empty {
+  background: transparent;
+}
+
+/* line 325, ../sass/contrast.scss */
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {
+  background: #16273b;
+  border: 1px solid white;
+}
+
+/* line 329, ../sass/contrast.scss */
+.calendar-calendar table td.mini a {
+  background: black;
+  border: 1px solid yellow;
+}
+
+/* line 335, ../sass/contrast.scss */
+.view .date-nav-wrapper .date-prev,
+.view .date-nav-wrapper .date-next {
+  background: #16273b;
+  border: 1px solid white;
+}
+
+/* line 342, ../sass/contrast.scss */
+.calendar-calendar .month-view .full td.single-day .calendar-empty,
+.calendar-calendar .month-view .full td.single-day.empty,
+.calendar-calendar .month-view .full td.date-box.empty {
+  background: #222;
+}
+
+/* line 348, ../sass/contrast.scss */
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: #111;
+  color: #ffffff;
+  border: 1px solid yellow;
+}
+
+/* line 357, ../sass/contrast.scss */
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: #111;
+}
+
+/* line 362, ../sass/contrast.scss */
+.calendar-calendar .week-view .full div.item-wrapper,
+.calendar-calendar .day-view .full div.item-wrapper {
+  background-color: #111;
+}
+
+/* line 366, ../sass/contrast.scss */
+.calendar-calendar div.calendar {
+  background-color: #111;
 }

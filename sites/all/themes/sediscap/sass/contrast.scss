@@ -262,3 +262,107 @@ table td.mini a {
   padding-bottom: 0;
 }
 
+
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+	border:1px solid white;
+	background:darken($sky,30%);
+	border-bottom: 3px solid white;
+	color:$link !important;
+	&:hover{
+		background:darken($sky,20%);		
+		color:white !important;
+	}
+}
+
+#control-wrap {
+	li{
+		a{
+			border:1px solid white;
+			background:darken($sky,30%);
+			color:$link !important;
+			&:hover{
+				background:darken($sky,20%);		
+				color:white !important;				
+			}
+		}
+	}
+}
+
+
+ul.primary li a {
+  background-color: black;
+}
+ul.primary li a:hover {
+  background-color: #222;
+}
+ul.primary li.active a {
+  background-color: #444;
+}
+
+
+.year-view div.month-view div.date-nav{
+	background-color:#333;
+}
+.calendar-calendar th.days{
+	background-color:#222;	
+	color:white;
+}
+.calendar-calendar tr{
+	background:black;
+}
+.calendar-calendar td {
+	color:white;
+}
+.calendar-calendar table.mini td.empty {
+    background: transparent;
+}
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {
+  background:darken($sky,10%);
+  border:1px solid white;
+}
+.calendar-calendar table td.mini a{
+  background:black;
+  border:1px solid yellow;	
+}
+
+.view .date-nav-wrapper .date-prev ,
+.view .date-nav-wrapper .date-next {
+	background:darken($sky,10%);	
+  	border:1px solid white;
+}
+
+.calendar-calendar .month-view .full td.single-day .calendar-empty,
+.calendar-calendar .month-view .full td.single-day.empty,
+.calendar-calendar .month-view .full td.date-box.empty {
+  background: #222;
+}
+
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: #111;
+  color: #ffffff;
+  border:1px solid yellow;	
+}
+
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: #111;
+}
+
+.calendar-calendar .week-view .full div.item-wrapper,
+.calendar-calendar .day-view .full div.item-wrapper {
+    background-color: #111;
+}	
+
+.calendar-calendar div.calendar {
+    background-color: #111;
+}

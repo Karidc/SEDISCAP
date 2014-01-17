@@ -75,3 +75,20 @@
 .field-type-field-collection {
   overflow: hidden;
 }
+
+/* line 69, ../sass/sediscap-alpha-default-narrow.scss */
+.responsive-layout-narrow #region-branding {
+  text-align: center;
+}
+
+/* line 73, ../sass/sediscap-alpha-default-narrow.scss */
+.responsive-layout-narrow #region-branding .region-branding-inner > * {
+  float: left;
+  width: 100%;
+  margin: 0.6em 0;
+}
+/* line 77, ../sass/sediscap-alpha-default-narrow.scss */
+.responsive-layout-narrow #region-branding .region-branding-inner > * > * {
+  padding: 0 10em;
+  text-align: center;
+}
